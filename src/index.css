@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-1: #194BFB;
+    --primary-2: #436CFF;
+    --primary-3: #95ADFF;
+    --primary-4: #BFCDFF;
+    --primary-5: #E8EDFF;
+    --secondary-1: #1A202C;
+    --secondary-2: #5D6A83;
+    --secondary-3: #96A3BE;
+    --secondary-4: #D8E3F8;
+    --secondary-5: #F2F6FF;
+    --success-1: #16A34A;
+    --success-2: #22C55E;
+    --success-3: #4ADE80;
+    --warning-1: #EAB308;
+    --warning-2: #FACC15;
+    --warning-3: #FDE047;
+    --error-1: #DD3333;
+    --error-2: #FF4747;
+    --error-3: #FF7171;
+    --gray-50: #FAFAFA;
+    --gray-100: #F7FAFC;
+    --gray-200: #EDF2F7;
+    --gray-300: #E2E8F0;
+    --gray-400: #CBD5E0;
+    --gray-500: #A0AEC0;
+    --gray-600: #718096;
+    --gray-700: #2A313C;
+    --gray-800: #232B38;
+    --gray-900: #1A202C;
+    --white: #FFFFFF;
+    --orange: #FF784B;
+    --amber: #FFC837;
+    --purple: #936DFF;
+
+    /* Font Size */
+    --font-s-10: 10px;
+    --font-s-12: 12px;
+    --font-s-16: 16px;
+    --font-s-20: 20px;
+    --font-s-24: 24px;
+    --font-s-32: 32px;
+    --font-s-40: 40px;
+    --font-s-48: 48px;
+
+    /* Font Weight */
+    --font-w-400: 400;
+    --font-w-500: 500;
+    --font-w-600: 600;
+    --font-w-700: 700;
+    --font-w-800: 800;
+    --font-w-900: 900;
+
+    /* Line Height */
+    --line-h-20: 20px;
+    --line-h-30: 30px;
+    --line-h-68: 68px;
+  }
+
+  .dark {
+    /* --primary-1: #E0F2FE;
+    --primary-2: #60A5FA;
+    --primary-3: #93C5FD;
+    --primary-4: #BFDBFE;
+    --primary-5: #E0F2FE;
+    --secondary-1: #E5E7EB;
+    --secondary-2: #D1D5DB;
+    --secondary-3: #9CA3AF;
+    --secondary-4: #6B7280;
+    --secondary-5: #4B5563;
+    --success-1: #10B981;
+    --success-2: #34D399;
+    --success-3: #6EE7B7;
+    --warning-1: #F59E0B;
+    --warning-2: #FBBF24;
+    --warning-3: #FDE68A;
+    --error-1: #EF4444;
+    --error-2: #F87171;
+    --error-3: #FCA5A5;
+    --gray-50: #1F2937;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --gray-300: #D1D5DB;
+    --gray-400: #9CA3AF;
+    --gray-500: #6B7280;
+    --gray-600: #9CA3AF;
+    --gray-700: #D1D5DB;
+    --gray-800: #E5E7EB;
+    --gray-900: #F3F4F6;
+    --white: #FFFFFF;
+    --orange: #FB923C;
+    --amber: #FBBF24;
+    --purple: #A78BFA; */
+
+    --primary-1: #194BFB;
+    --primary-2: #436CFF;
+    --primary-3: #95ADFF;
+    --primary-4: #BFCDFF;
+    --primary-5: #E8EDFF;
+    --secondary-1: #1A202C;
+    --secondary-2: #5D6A83;
+    --secondary-3: #96A3BE;
+    --secondary-4: #D8E3F8;
+    --secondary-5: #F2F6FF;
+    --success-1: #16A34A;
+    --success-2: #22C55E;
+    --success-3: #4ADE80;
+    --warning-1: #EAB308;
+    --warning-2: #FACC15;
+    --warning-3: #FDE047;
+    --error-1: #DD3333;
+    --error-2: #FF4747;
+    --error-3: #FF7171;
+    --gray-50: #FAFAFA;
+    --gray-100: #F7FAFC;
+    --gray-200: #EDF2F7;
+    --gray-300: #E2E8F0;
+    --gray-400: #CBD5E0;
+    --gray-500: #A0AEC0;
+    --gray-600: #718096;
+    --gray-700: #2A313C;
+    --gray-800: #232B38;
+    --gray-900: #1A202C;
+    --white: #FFFFFF;
+    --orange: #FF784B;
+    --amber: #FFC837;
+    --purple: #936DFF;
+  }
+}
+
+
+@layer base {
+  * {}
+
+  body {
+    font-family: "Manrope", sans-serif;
+  }
+
+  @layer utilities {
+    .max-h-screen-viewport-less-48 {
+      min-height: calc(100vh - 48px);
+    }
+
+    .box-shadow {
+      box-shadow: 0px 16px 24px 0px #5D6A8305;
+    }
+
+    .otp-input {
+      @apply p-5 leading-8 border border-gray-300 border-solid rounded-xl h-14 w-14 text-24 font-800;
+
+    }
+  }
+}
