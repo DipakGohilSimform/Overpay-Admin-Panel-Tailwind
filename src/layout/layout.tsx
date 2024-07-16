@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="flex flex-col min-h-screen">
       <div className="flex flex-1">
         {location.pathname !== "/" && <Sidebar />}
-        <main className="flex-1 p-4  overflow-auto h-[calc(100vh-72px)]">
+        <main className="flex-1 min-h-screen p-4 bg-white">
           <Outlet />
         </main>
       </div>
