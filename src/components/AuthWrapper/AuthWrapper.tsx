@@ -14,7 +14,7 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children, page }) => {
     <>
       {/* dynamic header */}
       {["otp", "forget", "reason"].includes(page) && (
-        <div className="sm:fixed top-0 left-0 right-0 flex justify-between items-center w-screen px-5 sm:px-12 bg-gray-900 h-[100px] z-10">
+        <div className=" sm:fixed top-0 left-0 right-0 flex justify-between items-center w-screen px-5 sm:px-12 bg-gray-900 h-[100px] z-10">
           <img src={Images.LogoWhite} alt="logo" className="h-8" />
           <Link to="/" className={`${page === "otp" ? "block" : "hidden"}`}>
             <Button
@@ -28,10 +28,18 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children, page }) => {
               page === "reason" ? "flex" : "hidden"
             }`}
           >
-            <Link to="#">Personal</Link>
-            <Link to="#">Business</Link>
-            <Link to="#">Partners</Link>
-            <Link to="#">Help & FAQ</Link>
+            <Link to="#" className="text-gray-900">
+              Personal
+            </Link>
+            <Link to="#" className="text-gray-900">
+              Business
+            </Link>
+            <Link to="#" className="text-gray-900">
+              Partners
+            </Link>
+            <Link to="#" className="text-gray-900">
+              Help & FAQ
+            </Link>
           </div>
         </div>
       )}
@@ -84,7 +92,7 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children, page }) => {
                 alt="auth-mockup"
                 className="object-contain mb-16 mt-7"
               />
-              <h3 className="mb-5 text-center text-white text-40 font-800">
+              <h3 className="mb-5 text-center text-white dark:text-gray-900 text-40 font-800">
                 Get better with money
               </h3>
               <p className="mb-8 text-center text-white text-14">

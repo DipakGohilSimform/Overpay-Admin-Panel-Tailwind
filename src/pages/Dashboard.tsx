@@ -15,7 +15,7 @@ export default function Dashboard() {
   return (
     <div>
       <Header title="Dashboard" />
-      <div className="flex flex-wrap h-screen gap-8 ">
+      <div className="flex gap-8 ">
         <div className="grow shrink basis-auto">
           <div className="flex justify-between p-8 min-h-[184px] bg-primary-1 rounded-2xl mb-8">
             <div>
@@ -37,7 +37,7 @@ export default function Dashboard() {
               className="mr-[-32px] mb-[-32px] max-h-[185px]"
             />
           </div>
-          <div className="flex justify-between p-8 min-h-[184px] bg-white rounded-2xl mb-8">
+          <div className="mb-8 bg-white rounded-2xl">
             <div className="flex items-center justify-between w-full mb-6">
               <h3 className="leading-6 text-gray-900 text-16 font-800">
                 Money Flow
@@ -56,6 +56,9 @@ export default function Dashboard() {
                   </p>
                 </div>
               </div>
+            </div>
+            <div>
+              <img src={Images.MoneyFlow} alt="money flow" className="w-full" />
             </div>
           </div>
           <div className="p-8 min-h-[184px] bg-white rounded-2xl mb-8">
@@ -237,12 +240,12 @@ export default function Dashboard() {
                 <img
                   src={Images.Avatar}
                   alt="avatar"
-                  className="absolute right-6"
+                  className="absolute right-6 h-7"
                 />
                 <img
                   src={Images.Avatar2}
                   alt="avatar"
-                  className="absolute right-0"
+                  className="absolute right-0 h-7"
                 />
               </div>
             </div>

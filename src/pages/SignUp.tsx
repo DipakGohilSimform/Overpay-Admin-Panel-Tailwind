@@ -9,7 +9,7 @@ export default function SignUp() {
   return (
     <AuthWrapper page="signup">
       <form className="max-w-[427px]">
-        <h2 className="mb-4 text-center text-black text-32 font-800">
+        <h2 className="mb-4 text-center text-gray-900 text-32 font-800">
           Sign up for an account
         </h2>
         <p className="mb-10 leading-6 text-center text-gray-600 text-16">
@@ -46,7 +46,7 @@ export default function SignUp() {
             Electronics Communication Policy.
           </Link>
         </p>
-        <Button text="Sign In" variant="primary" className="w-full mb-8" />
+        <Button text="Sign Up" variant="primary" className="w-full mb-8" />
         <p className="leading-6 text-center text-gray-900 text-16 font-500">
           Don't have an account?{" "}
           <Link to="/" className="font-800">

@@ -15,6 +15,9 @@ import Rect1 from "../assets/images/Rect1.png";
 import Rect2 from "../assets/images/Rect2.png";
 import Bitcoin from "../assets/images/Bitcoin.png";
 import Paypal from "../assets/images/Paypal.png";
+import MoneyFlow from "../assets/images/MoneyFlow.png";
+import USD from "../assets/images/USD.png";
+import Statistics from "../assets/images/Statistics.png";
 
 const Images = {
   Logo,
@@ -34,6 +37,9 @@ const Images = {
   Rect2,
   Bitcoin,
   Paypal,
+  MoneyFlow,
+  USD,
+  Statistics,
 };
 
 export default Images;

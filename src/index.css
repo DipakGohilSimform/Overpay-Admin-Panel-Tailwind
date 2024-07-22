@@ -73,7 +73,7 @@
     --primary-5: #E8EDFF;
     --secondary-1: #1A202C;
     --secondary-2: #5D6A83;
-    --secondary-3: #96A3BE;
+    --secondary-3: #2A313C;
     --secondary-4: #D8E3F8;
     --secondary-5: #F2F6FF;
     --success-1: #16A34A;
@@ -88,7 +88,7 @@
     --gray-50: #232B38;
     --gray-100: #F7FAFC;
     --gray-200: #2A313C;
-    --gray-300: #E2E8F0;
+    --gray-300: #2A313C;
     --gray-400: #CBD5E0;
     --gray-500: #A0AEC0;
     --gray-600: #718096;
@@ -101,7 +101,6 @@
     --purple: #936DFF;
   }
 }
-
 
 @layer base {
   * {}
@@ -117,6 +116,11 @@
 
     .box-shadow {
       box-shadow: 0px 16px 24px 0px #5D6A8305;
+    }
+
+    .dropdown-box-shadow {
+      box-shadow: 8px 16px 32px 0px #71809614;
+
     }
 
     .otp-input {

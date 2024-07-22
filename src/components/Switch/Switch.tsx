@@ -1,6 +1,6 @@
 interface SwitchProps {
-  isOn: boolean;
-  handleToggle: () => void;
+  isOn?: boolean;
+  handleToggle?: () => void;
   onColor?: string;
   offColor?: string;
 }

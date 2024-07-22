@@ -6,6 +6,10 @@ import SignUp from "./pages/SignUp";
 import OTP from "./pages/OTP";
 import ForgotPass from "./pages/ForgotPass";
 import Reason from "./pages/Reason";
+import Transactions from "./pages/Transactions";
+import Recipients from "./pages/Recipients";
+import MyWallet from "./pages/MyWallet";
+import Invoices from "./pages/Invoices";
 
 export const Router = createBrowserRouter([
   {
@@ -15,6 +19,26 @@ export const Router = createBrowserRouter([
         path: "/dashboard",
         index: true,
         element: <Dashboard />,
+      },
+      {
+        path: "/transactions",
+        index: true,
+        element: <Transactions />,
+      },
+      {
+        path: "/recipients",
+        index: true,
+        element: <Recipients />,
+      },
+      {
+        path: "/my-wallet",
+        index: true,
+        element: <MyWallet />,
+      },
+      {
+        path: "/invoices",
+        index: true,
+        element: <Invoices />,
       },
     ],
   },

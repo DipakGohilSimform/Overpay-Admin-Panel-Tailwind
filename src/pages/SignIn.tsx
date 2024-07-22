@@ -9,7 +9,7 @@ export default function SignIn() {
   return (
     <AuthWrapper page="signin">
       <form className="max-w-[427px]">
-        <h2 className="mb-4 text-center text-black text-32 font-800">
+        <h2 className="mb-4 text-center text-gray-900 text-32 font-800">
           Sign in to Overpay
         </h2>
         <p className="mb-10 leading-6 text-center text-gray-600 text-16">
@@ -46,7 +46,9 @@ export default function SignIn() {
             Forgot Password?
           </Link>
         </div>
-        <Button text="Sign In" variant="primary" className="w-full mb-8" />
+        <Link to="/dashboard">
+          <Button text="Sign In" variant="primary" className="w-full mb-8" />
+        </Link>
         <p className="leading-6 text-center text-gray-900 text-16 font-500">
           Don't have an account?{" "}
           <Link to="/sign-up" className="font-800">
