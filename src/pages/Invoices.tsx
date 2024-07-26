@@ -1,14 +1,17 @@
 import Button from "@/components/Button/Button";
+import Checkbox from "@/components/Checkbox/Checkbox";
 import Header from "@/components/Header/Header";
 import IconCreateInvoice from "@/components/Icons/IconCreateInvoice";
+import IconDots from "@/components/Icons/IconDots";
 import IconFilter from "@/components/Icons/IconFilter";
+import IconReceipt from "@/components/Icons/IconReceipt";
 import IconSearch from "@/components/Icons/IconSearch";
 import IconSortArrow from "@/components/Icons/IconSortArrow";
 import Input from "@/components/Input/Input";
 import Modal from "@/components/Modal/Modal";
 import Select from "@/components/Select/Select";
-import Images from "@/config/images";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Invoices() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,17 +30,19 @@ function Invoices() {
             <IconSearch />
           </span>
           <Input
-            placeholder="Search for transactions..."
+            placeholder="Search invoice..."
             className="pl-12 max-w-[300px]"
           />
         </div>
         <div className="flex gap-4">
-          <Button
-            variant="primary"
-            icon={<IconCreateInvoice />}
-            text="Create invoice"
-            className="flex-row-reverse "
-          />
+          <Link to="/invoices/create-invoice">
+            <Button
+              variant="primary"
+              icon={<IconCreateInvoice />}
+              text="Create invoice"
+              className="flex-row-reverse "
+            />
+          </Link>
           <Button
             icon={<IconFilter />}
             text="Filters"
@@ -53,7 +58,8 @@ function Invoices() {
           <tr className="bg-white border-t border-b dark:bg-gray-800 dark:border-gray-700">
             <th scope="col" className="px-6 py-6">
               <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                Name/Business
+                <Checkbox />
+                Name
                 <span>
                   <IconSortArrow />
                 </span>
@@ -61,7 +67,7 @@ function Invoices() {
             </th>
             <th scope="col" className="px-6 py-6">
               <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                Email
+                Date
                 <span>
                   <IconSortArrow />
                 </span>
@@ -69,7 +75,7 @@ function Invoices() {
             </th>
             <th scope="col" className="px-6 py-6">
               <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                Account type
+                Client
                 <span>
                   <IconSortArrow />
                 </span>
@@ -77,7 +83,7 @@ function Invoices() {
             </th>
             <th scope="col" className="px-6 py-6">
               <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                Currency
+                Price
                 <span>
                   <IconSortArrow />
                 </span>
@@ -85,7 +91,15 @@ function Invoices() {
             </th>
             <th scope="col" className="px-6 py-6">
               <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                Currency
+                Status
+                <span>
+                  <IconSortArrow />
+                </span>
+              </p>
+            </th>
+            <th scope="col" className="px-6 py-6">
+              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+                Actions
                 <span>
                   <IconSortArrow />
                 </span>
@@ -99,31 +113,43 @@ function Invoices() {
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
-              <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
-                Guy Hawkins
-              </p>
+              <Checkbox />
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-5">
+                <IconReceipt />
+              </div>
+              <div>
+                <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+                  New Design Project
+                </p>
+                <p className="leading-5 text-gray-600 text-14 font-500">
+                  INV110XXX
+                </p>
+              </div>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
-                    guy.hawkins@mail.com
+                    January 05, 2022
                   </p>
                 </div>
               </div>
             </td>
             <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-600">
-              Business
+              Biffco Enterprises
             </td>
-            <td>
-              <div className="flex items-center gap-2 p-6">
-                <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+            <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-800">
+              $1,240.00
+            </td>
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+                Paid
               </div>
             </td>
-            <td className="leading-6 text-gray-900 text-16 font-600">
-              20 Jan 2022, 09.00 PM
+            <td className="px-10 py-4">
+              <button className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-300 rounded-lg">
+                <IconDots />
+              </button>
             </td>
           </tr>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -131,31 +157,43 @@ function Invoices() {
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
-              <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
-                Guy Hawkins
-              </p>
+              <Checkbox />
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-5">
+                <IconReceipt />
+              </div>
+              <div>
+                <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+                  New Design Project
+                </p>
+                <p className="leading-5 text-gray-600 text-14 font-500">
+                  INV110XXX
+                </p>
+              </div>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
-                    guy.hawkins@mail.com
+                    January 05, 2022
                   </p>
                 </div>
               </div>
             </td>
             <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-600">
-              Business
+              Biffco Enterprises
             </td>
-            <td>
-              <div className="flex items-center gap-2 p-6">
-                <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+            <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-800">
+              $1,240.00
+            </td>
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+                Paid
               </div>
             </td>
-            <td className="leading-6 text-gray-900 text-16 font-600">
-              20 Jan 2022, 09.00 PM
+            <td className="px-10 py-4">
+              <button className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-300 rounded-lg">
+                <IconDots />
+              </button>
             </td>
           </tr>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -163,31 +201,43 @@ function Invoices() {
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
-              <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
-                Guy Hawkins
-              </p>
+              <Checkbox />
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-5">
+                <IconReceipt />
+              </div>
+              <div>
+                <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+                  New Design Project
+                </p>
+                <p className="leading-5 text-gray-600 text-14 font-500">
+                  INV110XXX
+                </p>
+              </div>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
-                    guy.hawkins@mail.com
+                    January 05, 2022
                   </p>
                 </div>
               </div>
             </td>
             <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-600">
-              Business
+              Biffco Enterprises
             </td>
-            <td>
-              <div className="flex items-center gap-2 p-6">
-                <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+            <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-800">
+              $1,240.00
+            </td>
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+                Paid
               </div>
             </td>
-            <td className="leading-6 text-gray-900 text-16 font-600">
-              20 Jan 2022, 09.00 PM
+            <td className="px-10 py-4">
+              <button className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-300 rounded-lg">
+                <IconDots />
+              </button>
             </td>
           </tr>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -195,31 +245,43 @@ function Invoices() {
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
-              <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
-                Guy Hawkins
-              </p>
+              <Checkbox />
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-5">
+                <IconReceipt />
+              </div>
+              <div>
+                <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+                  New Design Project
+                </p>
+                <p className="leading-5 text-gray-600 text-14 font-500">
+                  INV110XXX
+                </p>
+              </div>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
-                    guy.hawkins@mail.com
+                    January 05, 2022
                   </p>
                 </div>
               </div>
             </td>
             <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-600">
-              Business
+              Biffco Enterprises
             </td>
-            <td>
-              <div className="flex items-center gap-2 p-6">
-                <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+            <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-800">
+              $1,240.00
+            </td>
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+                Paid
               </div>
             </td>
-            <td className="leading-6 text-gray-900 text-16 font-600">
-              20 Jan 2022, 09.00 PM
+            <td className="px-10 py-4">
+              <button className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-300 rounded-lg">
+                <IconDots />
+              </button>
             </td>
           </tr>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -227,31 +289,43 @@ function Invoices() {
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
-              <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
-                Guy Hawkins
-              </p>
+              <Checkbox />
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-5">
+                <IconReceipt />
+              </div>
+              <div>
+                <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+                  New Design Project
+                </p>
+                <p className="leading-5 text-gray-600 text-14 font-500">
+                  INV110XXX
+                </p>
+              </div>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
-                    guy.hawkins@mail.com
+                    January 05, 2022
                   </p>
                 </div>
               </div>
             </td>
             <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-600">
-              Business
+              Biffco Enterprises
             </td>
-            <td>
-              <div className="flex items-center gap-2 p-6">
-                <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+            <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-800">
+              $1,240.00
+            </td>
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+                Paid
               </div>
             </td>
-            <td className="leading-6 text-gray-900 text-16 font-600">
-              20 Jan 2022, 09.00 PM
+            <td className="px-10 py-4">
+              <button className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-300 rounded-lg">
+                <IconDots />
+              </button>
             </td>
           </tr>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -259,31 +333,43 @@ function Invoices() {
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
-              <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
-                Guy Hawkins
-              </p>
+              <Checkbox />
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-5">
+                <IconReceipt />
+              </div>
+              <div>
+                <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+                  New Design Project
+                </p>
+                <p className="leading-5 text-gray-600 text-14 font-500">
+                  INV110XXX
+                </p>
+              </div>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
-                    guy.hawkins@mail.com
+                    January 05, 2022
                   </p>
                 </div>
               </div>
             </td>
             <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-600">
-              Business
+              Biffco Enterprises
             </td>
-            <td>
-              <div className="flex items-center gap-2 p-6">
-                <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+            <td className="px-6 py-4 leading-6 text-gray-900 text-16 font-800">
+              $1,240.00
+            </td>
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+                Paid
               </div>
             </td>
-            <td className="leading-6 text-gray-900 text-16 font-600">
-              20 Jan 2022, 09.00 PM
+            <td className="px-10 py-4">
+              <button className="flex items-center justify-center w-8 h-8 text-gray-600 border border-gray-300 rounded-lg">
+                <IconDots />
+              </button>
             </td>
           </tr>
         </tbody>

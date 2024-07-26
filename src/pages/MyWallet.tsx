@@ -1,3 +1,4 @@
+import AddCurrencyModal from "@/components/AddCurrencyModal/AddCurrencyModal";
 import Button from "@/components/Button/Button";
 import Header from "@/components/Header/Header";
 import IconArrow from "@/components/Icons/IconArrow";
@@ -9,7 +10,11 @@ import IconDots from "@/components/Icons/IconDots";
 import IconEllipse from "@/components/Icons/IconEllipse";
 import IconInvoicing from "@/components/Icons/IconInvoicing";
 import IconUp from "@/components/Icons/IconUp";
+import ReceiveMoneyModal from "@/components/ReceiveMoneyModal/ReceiveMoneyModal";
+import RequestModal from "@/components/RequestModal/RequestModal";
+import ReviewDetailModal from "@/components/ReviewDetailModal/ReviewDetailModal";
 import Select from "@/components/Select/Select";
+import SendMoneyModal from "@/components/SendMoneyModal/SendMoneyModal";
 import Switch from "@/components/Switch/Switch";
 import Images from "@/config/images";
 import { useState } from "react";
@@ -29,6 +34,22 @@ function MyWallet() {
     { value: "EUR", label: "EUR" },
     { value: "GBP", label: "GBP" },
   ];
+  const [modals, setModals] = useState({
+    addCurrency: false,
+    sendMoney: false,
+    receiveMoney: false,
+    reviewDetail: false,
+    request: false,
+  });
+
+  const openModal = (modalName: string) => {
+    setModals((prev) => ({ ...prev, [modalName]: true }));
+  };
+
+  const closeModal = (modalName: string) => {
+    setModals((prev) => ({ ...prev, [modalName]: false }));
+  };
+
   return (
     <div>
       <Header title="MyWallet" />
@@ -82,7 +103,10 @@ function MyWallet() {
               <IconArrow />
             </div>
             <div className="flex flex-wrap gap-4">
-              <button className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl">
+              <button
+                className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl"
+                onClick={() => openModal("addCurrency")}
+              >
                 <div className="flex items-center justify-center w-10 h-10 mb-2 rounded-full bg-secondary-5">
                   <IconDeposit />
                 </div>
@@ -90,13 +114,19 @@ function MyWallet() {
                   Deposit
                 </p>
               </button>
-              <button className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl">
+              <button
+                className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl"
+                onClick={() => openModal("sendMoney")}
+              >
                 <div className="flex items-center justify-center w-10 h-10 mb-2 rounded-full bg-secondary-5">
                   <IconCardSend />
                 </div>
                 <p className="leading-4 text-gray-900 text-12 font-600">Send</p>
               </button>
-              <button className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl">
+              <button
+                className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl"
+                onClick={() => openModal("receiveMoney")}
+              >
                 <div className="flex items-center justify-center w-10 h-10 mb-2 rounded-full bg-secondary-5">
                   <IconCardReceive />
                 </div>
@@ -104,7 +134,10 @@ function MyWallet() {
                   Receive
                 </p>
               </button>
-              <button className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl">
+              <button
+                className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl"
+                onClick={() => openModal("reviewDetail")}
+              >
                 <div className="flex items-center justify-center w-10 h-10 mb-2 rounded-full bg-secondary-5">
                   <IconInvoicing />
                 </div>
@@ -112,7 +145,10 @@ function MyWallet() {
                   Invoicing
                 </p>
               </button>
-              <button className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl">
+              <button
+                className="flex flex-col justify-center items-center p-3 basis-[120px] grow border border-gray-200 rounded-2xl"
+                onClick={() => openModal("request")}
+              >
                 <div className="flex items-center justify-center w-10 h-10 mb-2 rounded-full bg-secondary-5">
                   <IconCheckout />
                 </div>
@@ -274,6 +310,26 @@ function MyWallet() {
           </div>
         </div>
       </div>
+      <AddCurrencyModal
+        isOpen={modals.addCurrency}
+        onClose={() => closeModal("addCurrency")}
+      />
+      <SendMoneyModal
+        isOpen={modals.sendMoney}
+        onClose={() => closeModal("sendMoney")}
+      />
+      <ReceiveMoneyModal
+        isOpen={modals.receiveMoney}
+        onClose={() => closeModal("receiveMoney")}
+      />
+      <ReviewDetailModal
+        isOpen={modals.reviewDetail}
+        onClose={() => closeModal("reviewDetail")}
+      />
+      <RequestModal
+        isOpen={modals.request}
+        onClose={() => closeModal("request")}
+      />
     </div>
   );
 }

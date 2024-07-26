@@ -12,7 +12,6 @@ import { useState } from "react";
 
 function Recipients() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
   const options = [
@@ -293,7 +292,9 @@ function Recipients() {
       </table>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className="mb-6 border-b border-gray-200">
-          <h2 className="mb-4 text-lg font-bold">Add Recipient</h2>
+          <h2 className="mb-4 text-lg font-bold text-gray-900">
+            Add Recipient
+          </h2>
         </div>
         <div className="mb-6">
           <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
@@ -311,7 +312,7 @@ function Recipients() {
           <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
             Email
           </h3>
-          <Input placeholder="Enter emai  l" className="h-12" />
+          <Input placeholder="Enter email" className="h-12" />
         </div>
         <div className="mb-6">
           <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">

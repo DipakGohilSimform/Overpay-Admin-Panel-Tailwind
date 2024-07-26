@@ -10,6 +10,7 @@ import Transactions from "./pages/Transactions";
 import Recipients from "./pages/Recipients";
 import MyWallet from "./pages/MyWallet";
 import Invoices from "./pages/Invoices";
+import CreateInvoice from "./pages/CreateInvoice";
 
 export const Router = createBrowserRouter([
   {
@@ -39,6 +40,11 @@ export const Router = createBrowserRouter([
         path: "/invoices",
         index: true,
         element: <Invoices />,
+      },
+      {
+        path: "/invoices/create-invoice",
+        index: true,
+        element: <CreateInvoice />,
       },
     ],
   },

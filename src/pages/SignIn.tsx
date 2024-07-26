@@ -1,5 +1,6 @@
 import AuthWrapper from "@/components/AuthWrapper/AuthWrapper";
 import Button from "@/components/Button/Button";
+import Checkbox from "@/components/Checkbox/Checkbox";
 import IconApple from "@/components/Icons/IconApple";
 import IconGoogle from "@/components/Icons/IconGoogle";
 import Input from "@/components/Input/Input";
@@ -34,7 +35,7 @@ export default function SignIn() {
         </div>
         <div className="flex justify-between mb-8">
           <div className="flex gap-2">
-            <input type="radio" id="remember" />
+            <Checkbox />
             <label
               className="leading-6 text-gray-900 text-16 font-600"
               htmlFor="remember"

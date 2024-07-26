@@ -5,14 +5,31 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   children: ReactNode;
+  btnText?: string;
+  width?: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
+const Modal: React.FC<ModalProps> = ({
+  isOpen,
+  onClose,
+  children,
+  btnText,
+  width = "450px", // Default width
+}) => {
   if (!isOpen) return null;
 
+  const handleBackgroundClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="p-6 w-[450px] bg-white rounded-2xl shadow-lg">
+    <div
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+      onClick={handleBackgroundClick}
+    >
+      <div className="p-6 bg-white shadow-lg rounded-2xl" style={{ width }}>
         <div className="relative bg-white">
           <button
             onClick={onClose}
@@ -21,7 +38,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             ✕
           </button>
           <div className="mb-6">{children}</div>
-          <Button variant="primary" text="Confirm" className="w-full !h-12" />
+          {btnText && (
+            <Button variant="primary" text={btnText} className="w-full !h-12" />
+          )}
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ export default function Dashboard() {
   return (
     <div>
       <Header title="Dashboard" />
-      <div className="flex gap-8 ">
+      <div className="flex gap-8">
         <div className="grow shrink basis-auto">
           <div className="flex justify-between p-8 min-h-[184px] bg-primary-1 rounded-2xl mb-8">
             <div>
@@ -168,7 +168,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="basis-[365px] ">
+        <div className="basis-[365px]">
           <div className="px-6 py-8 mb-8 border border-gray-200 rounded-2xl">
             <div className="flex items-center justify-between mb-6">
               <h3 className="leading-6 text-gray-900 text-16 font-800">

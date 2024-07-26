@@ -20,25 +20,23 @@ function Select({ options, placeholder, className }: SelectProps) {
   };
 
   return (
-    <div className={`relative select-none ${className}`}>
-      <div
-        onClick={toggleDropdown}
-        className="relative w-full p-3 h-[48px] leading-6 text-gray-900 text-18 font-800 bg-white border border-gray-300 border-solid cursor-pointer rounded-2xl"
-      >
-        <div className="absolute top-4 right-4">
-          <IconArrow />
-        </div>
-        {selectedOption
-          ? options.find((option) => option.value === selectedOption)?.label
-          : placeholder}
+    <div
+      onClick={toggleDropdown}
+      className={`relative w-full leading-6 text-gray-900 bg-white text-18 font-600 p-3 h-[48px] select-none border border-gray-300 border-solid cursor-pointer rounded-2xl ${className}`}
+    >
+      <div className="absolute top-[40%] right-4">
+        <IconArrow />
       </div>
+      {selectedOption
+        ? options.find((option) => option.value === selectedOption)?.label
+        : placeholder}
       {isOpen && (
-        <ul className="absolute z-10 w-full mt-1 bg-white border border-gray-300 border-solid dark:border-gray-700 rounded-2xl">
+        <ul className="absolute left-[3px] top-[57px] z-10 w-full mt-1 bg-white border border-gray-300 border-solid rounded-2xl">
           {options.map((option) => (
             <li
               key={option.value}
               onClick={() => handleOptionClick(option.value)}
-              className="p-3 h-[48px] leading-6 text-gray-900 text-16 font-800 text-center cursor-pointer pr-1"
+              className="p-3 h-[48px] leading-6 text-gray-900 text-16 font-600 cursor-pointer pr-1"
             >
               {option.label}
             </li>
