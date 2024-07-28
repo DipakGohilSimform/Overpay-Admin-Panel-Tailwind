@@ -72,7 +72,10 @@ const ProfileDropdown: React.FC<DropdownProps> = () => {
             </p>
           </div>
           <div>
-            <Link to="#" className="flex items-center gap-3 py-3 text-gray-900">
+            <Link
+              to="/account-details"
+              className="flex items-center gap-3 py-3 text-gray-900"
+            >
               <div className="text-">
                 <IconUser />
               </div>

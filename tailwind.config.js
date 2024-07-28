@@ -67,7 +67,10 @@ export default {
         30: "var(--line-h-30)",
         68: "var(--line-h-68)",
       },
-      keyframes: {},
+      borderRadius: {
+        "custom-1": "16px 16px 16px 4px",
+        "custom-2": "16px 16px 4px 16px",
+      },
       animation: {},
     },
   },

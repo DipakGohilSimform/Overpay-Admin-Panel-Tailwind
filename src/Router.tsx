@@ -11,6 +11,8 @@ import Recipients from "./pages/Recipients";
 import MyWallet from "./pages/MyWallet";
 import Invoices from "./pages/Invoices";
 import CreateInvoice from "./pages/CreateInvoice";
+import Messages from "./pages/Messages";
+import AccountDetails from "./pages/AccountDetails";
 
 export const Router = createBrowserRouter([
   {
@@ -45,6 +47,16 @@ export const Router = createBrowserRouter([
         path: "/invoices/create-invoice",
         index: true,
         element: <CreateInvoice />,
+      },
+      {
+        path: "/messages",
+        index: true,
+        element: <Messages />,
+      },
+      {
+        path: "/account-details",
+        index: true,
+        element: <AccountDetails />,
       },
     ],
   },

@@ -11,6 +11,7 @@ import Card from "../assets/images/Card.jpg";
 import Debit from "../assets/images/Debit.png";
 import Avatar from "../assets/images/Avatar.png";
 import Avatar2 from "../assets/images/Avatar2.png";
+import Avatar3 from "../assets/images/Avatar3.png";
 import Rect1 from "../assets/images/Rect1.png";
 import Rect2 from "../assets/images/Rect2.png";
 import Bitcoin from "../assets/images/Bitcoin.png";
@@ -18,6 +19,7 @@ import Paypal from "../assets/images/Paypal.png";
 import MoneyFlow from "../assets/images/MoneyFlow.png";
 import USD from "../assets/images/USD.png";
 import Statistics from "../assets/images/Statistics.png";
+import Item from "../assets/images/Item.jpg";
 
 const Images = {
   Logo,
@@ -33,6 +35,7 @@ const Images = {
   Debit,
   Avatar,
   Avatar2,
+  Avatar3,
   Rect1,
   Rect2,
   Bitcoin,
@@ -40,6 +43,7 @@ const Images = {
   MoneyFlow,
   USD,
   Statistics,
+  Item,
 };
 
 export default Images;

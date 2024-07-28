@@ -27,7 +27,7 @@ export default function Sidebar() {
         <img src={Images.LogoSm} alt="logo" className="h-7" />
         <h3 className="text-gray-900 text-24 font-900">Overpay.</h3>
       </div>
-      <nav className="px-8">
+      <nav className="px-8 flex flex-col justify-between">
         <ul>
           <li>
             <NavLink
@@ -57,7 +57,7 @@ export default function Sidebar() {
           </li>
           <li>
             <NavLink
-              to="/intro"
+              to="/messages"
               className={({ isActive }) =>
                 `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
                   isActive,
