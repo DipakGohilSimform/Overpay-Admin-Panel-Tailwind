@@ -8,8 +8,14 @@ import IconReport from "@/components/Icons/IconReport";
 import IconTerminal from "@/components/Icons/IconTerminal";
 import IconUser from "@/components/Icons/IconUser";
 import Input from "@/components/Input/Input";
+import Select from "@/components/Select/Select";
 
 function AccountSetting() {
+  const options = [
+    { value: "option1", label: "Option 1" },
+    { value: "option2", label: "Option 2" },
+    { value: "option3", label: "Option 3" },
+  ];
   return (
     <div>
       <Header title="Account Setting" />
@@ -20,7 +26,7 @@ function AccountSetting() {
           </h4>
           <div className="mb-10">
             <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-100 rounded-full">
+              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full">
                 <IconBag />
               </div>
               <div>
@@ -34,7 +40,7 @@ function AccountSetting() {
             </div>
 
             <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-100 rounded-full">
+              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full">
                 <IconDoller />
               </div>
               <div>
@@ -48,7 +54,7 @@ function AccountSetting() {
             </div>
 
             <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-100 rounded-full">
+              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full">
                 <IconBell />
               </div>
               <div>
@@ -66,7 +72,7 @@ function AccountSetting() {
           </h4>
           <div>
             <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-100 rounded-full text-20">
+              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
                 <IconUser />
               </div>
               <div>
@@ -79,7 +85,7 @@ function AccountSetting() {
               </div>
             </div>
             <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-100 rounded-full text-20">
+              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
                 <IconTerminal />
               </div>
               <div>
@@ -92,7 +98,7 @@ function AccountSetting() {
               </div>
             </div>
             <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-100 rounded-full text-20">
+              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
                 <IconAuto />
               </div>
               <div>
@@ -105,7 +111,7 @@ function AccountSetting() {
               </div>
             </div>
             <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-100 rounded-full text-20">
+              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
                 <IconReport />
               </div>
               <div>
@@ -124,44 +130,68 @@ function AccountSetting() {
             <h2 className="mb-12 leading-6 text-gray-900 text-24 font-800">
               Business Information
             </h2>
+            <h3 className="mb-6 leading-6 text-gray-900 text-20 font-800">
+              Business Details
+            </h3>
             <div className="grid grid-cols-2 gap-6 mb-10">
-              <h3 className="mb-6 leading-6 text-gray-900 text-20 font-800">
-                Business Details
-              </h3>
               <div>
                 <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Full legal first name
+                  Business Name
                 </p>
-                <Input placeholder="First name" value="Alesia" />
+                <Input
+                  value="Iconic Agency"
+                  placeholder="Enter buisness name"
+                />
               </div>
               <div>
                 <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Full legal last name
+                  Industry
                 </p>
-                <Input placeholder="First name" value="Karapova" />
+                <Select
+                  options={options}
+                  placeholder="Select an option"
+                  className="!p-4 !h-[58px]"
+                />
               </div>
               <div>
                 <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Date of birth
+                  Timezone
                 </p>
-                <Input placeholder="First name" value="29th March 1996" />
+                <Select
+                  options={options}
+                  placeholder="Select an option"
+                  className="!p-4 !h-[58px]"
+                />
               </div>
               <div>
                 <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Phone number
+                  Default Currency
                 </p>
-                <Input placeholder="First name" value="+1 2345 2980 777" />
+                <Select
+                  options={options}
+                  placeholder="Select an option"
+                  className="!p-4 !h-[58px]"
+                />
               </div>
             </div>
 
             <div>
               <h3 className="mb-6 leading-6 text-gray-900 text-20 font-800">
-                Personal Address
+                Business Address
               </h3>
+              <div className="mb-8">
+                <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
+                  Legal name of company
+                </p>
+                <Input
+                  placeholder="Enter company name"
+                  value="Iconic Nice Agency LTD"
+                />
+              </div>
               <div className="grid grid-cols-2 gap-6 mb-10">
                 <div>
                   <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                    Country
+                    Apartment, suite, or etc.
                   </p>
                   <Input placeholder="First name" value="United States" />
                 </div>
