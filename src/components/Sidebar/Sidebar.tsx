@@ -6,7 +6,6 @@ import IconInvoice from "../Icons/IconInvoice";
 import IconMessage from "../Icons/IconMessage";
 import IconTerminal from "../Icons/IconTerminal";
 import IconActivity from "../Icons/IconActivity";
-import IconAnalytics from "../Icons/IconAnalytics";
 import Images from "@/config/images";
 import IconArrow from "../Icons/IconArrow";
 
