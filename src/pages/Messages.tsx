@@ -30,7 +30,7 @@ function Messages() {
             </div>
           </div>
           <div className="py-4">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
                 <p className="leading-6 text-gray-900 text-16 font-800">
@@ -39,17 +39,17 @@ function Messages() {
               </div>
               <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="h-6 w-6 rounded-full bg-primary-1 text-white flex justify-center items-center">
+              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
                 2
               </span>
             </div>
           </div>
           <div className="py-4">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
                 <p className="leading-6 text-gray-900 text-16 font-800">
@@ -58,17 +58,17 @@ function Messages() {
               </div>
               <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="h-6 w-6 rounded-full bg-primary-1 text-white flex justify-center items-center">
+              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
                 2
               </span>
             </div>
           </div>
           <div className="py-4">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
                 <p className="leading-6 text-gray-900 text-16 font-800">
@@ -77,17 +77,17 @@ function Messages() {
               </div>
               <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="h-6 w-6 rounded-full bg-primary-1 text-white flex justify-center items-center">
+              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
                 2
               </span>
             </div>
           </div>
           <div className="py-4">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
                 <p className="leading-6 text-gray-900 text-16 font-800">
@@ -96,11 +96,11 @@ function Messages() {
               </div>
               <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="h-6 w-6 rounded-full bg-primary-1 text-white flex justify-center items-center">
+              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
                 2
               </span>
             </div>
@@ -111,7 +111,7 @@ function Messages() {
         {/* main-body */}
         <div className="h-[calc(100vh-160px)] flex flex-col grow basis-auto border-l border-r border-gray-300">
           <div className="flex basis-[100px] justify-between items-center p-6 border-b">
-            <div className="flex gap-4 items-center">
+            <div className="flex items-center gap-4">
               <img src={Images.Avatar} alt="..." />
               <div>
                 <h4 className="leading-6 text-gray-900 text-16 font-800">
@@ -122,20 +122,20 @@ function Messages() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 items-center">
-              <button className="flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 text-gray-600">
+            <div className="flex items-center gap-4">
+              <button className="flex items-center justify-center w-10 h-10 text-gray-600 border border-gray-200 rounded-full">
                 <IconVideo />
               </button>
-              <button className="flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 text-gray-600">
+              <button className="flex items-center justify-center w-10 h-10 text-gray-600 border border-gray-200 rounded-full">
                 <IconPhone />
               </button>
-              <button className="flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 text-gray-600">
+              <button className="flex items-center justify-center w-10 h-10 text-gray-600 border border-gray-200 rounded-full">
                 <IconDots />
               </button>
             </div>
           </div>
-          <div className="flex grow basis-auto overflow-auto flex-col p-6">
-            <div className="flex items-start flex-col justify-start">
+          <div className="flex flex-col p-6 overflow-auto grow basis-auto">
+            <div className="flex flex-col items-start justify-start">
               <div className="flex items-center gap-4 mb-3">
                 <div className="p-4 bg-gray-100 rounded-custom-1 max-w-[303px] tracking-wider leading-5 text-gray-600 text-12 font-500">
                   Auctor urna, varius duis suspendisse mi in dictum. Interdum
@@ -154,9 +154,9 @@ function Messages() {
                 </span>
               </div>
             </div>
-            <div className="flex items-end flex-col justify-end">
-              <div className="flex items-center gap-4 mb-3 justify-end flex-row-reverse">
-                <div className="p-4 bg-primary-1 rounded-custom-1 max-w-[303px] tracking-wider leading-5 text-gray-50 text-12 font-500">
+            <div className="flex flex-col items-end justify-end">
+              <div className="flex flex-row-reverse items-center justify-end gap-4 mb-3">
+                <div className="p-4 bg-primary-1 rounded-custom-1 max-w-[303px] tracking-wider leading-5 text-gray-100 text-12 font-500">
                   Auctor urna, varius duis suspendisse mi in dictum. Interdum
                   egestas ut porttitor tortor aliquet massa.
                 </div>
@@ -196,13 +196,13 @@ function Messages() {
         {/* main-body-end */}
         <div className="basis-[300px] h-[calc(100vh-160px)] overflow-auto p-6">
           <div className="flex items-center justify-end mb-7">
-            <button className="h-10 w-10 rounded-full border border-gray-200 flex justify-center items-center text-gray-600">
+            <button className="flex items-center justify-center w-10 h-10 text-gray-600 border border-gray-200 rounded-full">
               <IconClose />
             </button>
           </div>
           <div className="flex justify-center">
-            <div className="flex flex-col justify-center items-center mb-14">
-              <img src={Images.Avatar} alt="..." className="mb-6 h-16" />
+            <div className="flex flex-col items-center justify-center mb-14">
+              <img src={Images.Avatar} alt="..." className="h-16 mb-6" />
               <h4 className="leading-6 text-gray-900 text-18 font-800">
                 Stefanie Ang
               </h4>
@@ -212,7 +212,7 @@ function Messages() {
             </div>
           </div>
           <div className="mb-10">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex items-center justify-between mb-4">
               <div>
                 <h4 className="mb-1 leading-5 text-gray-900 text-14 font-800">
                   Recent files
@@ -225,7 +225,7 @@ function Messages() {
                 <IconArrow />
               </button>
             </div>
-            <div className="flex py-2 justify-between items-center text-gray-600">
+            <div className="flex items-center justify-between py-2 text-gray-600">
               <div className="flex gap-3 text-gray-600">
                 <IconFile />
                 <p className="leading-5 text-gray-600 text-14 font-600">
@@ -236,7 +236,7 @@ function Messages() {
                 <IconDots />
               </button>
             </div>
-            <div className="flex py-2 justify-between items-center text-gray-600">
+            <div className="flex items-center justify-between py-2 text-gray-600">
               <div className="flex gap-3 text-gray-600">
                 <IconFile />
                 <p className="leading-5 text-gray-600 text-14 font-600">
@@ -247,7 +247,7 @@ function Messages() {
                 <IconDots />
               </button>
             </div>
-            <div className="flex py-2 justify-between items-center text-gray-600">
+            <div className="flex items-center justify-between py-2 text-gray-600">
               <div className="flex gap-3 text-gray-600">
                 <IconFile />
                 <p className="leading-5 text-gray-600 text-14 font-600">
@@ -261,7 +261,7 @@ function Messages() {
           </div>
 
           <div>
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex items-center justify-between mb-6">
               <div>
                 <h4 className="mb-1 leading-5 text-gray-900 text-14 font-800">
                   Images
@@ -274,17 +274,17 @@ function Messages() {
                 <IconArrow />
               </button>
             </div>
-            <div className="flex gap-3 flex-wrap">
-              <div className="h-28 basis-[112px] grow rounded-xl">
+            <div className="flex flex-wrap gap-3">
+              <div className="h-28 basis-[80px] grow rounded-xl overflow-hidden">
                 <img src={Images.Item} alt="..." />
               </div>
-              <div className="h-28 basis-[112px] grow rounded-xl">
+              <div className="h-28 basis-[80px] grow rounded-xl overflow-hidden">
                 <img src={Images.Item} alt="..." />
               </div>
-              <div className="h-28 basis-[112px] grow rounded-xl">
+              <div className="h-28 basis-[80px] grow rounded-xl overflow-hidden">
                 <img src={Images.Item} alt="..." />
               </div>
-              <div className="h-28 basis-[112px] grow rounded-xl">
+              <div className="h-28 basis-[80px] grow rounded-xl overflow-hidden">
                 <img src={Images.Item} alt="..." />
               </div>
             </div>

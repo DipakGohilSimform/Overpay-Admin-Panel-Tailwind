@@ -13,6 +13,7 @@ import Invoices from "./pages/Invoices";
 import CreateInvoice from "./pages/CreateInvoice";
 import Messages from "./pages/Messages";
 import AccountDetails from "./pages/AccountDetails";
+import AccountSetting from "./pages/AccountSetting";
 
 export const Router = createBrowserRouter([
   {
@@ -57,6 +58,11 @@ export const Router = createBrowserRouter([
         path: "/account-details",
         index: true,
         element: <AccountDetails />,
+      },
+      {
+        path: "/account-setting",
+        index: true,
+        element: <AccountSetting />,
       },
     ],
   },
