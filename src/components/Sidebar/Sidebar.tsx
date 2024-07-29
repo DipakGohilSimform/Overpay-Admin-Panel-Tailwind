@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import IconHome from "../Icons/IconHome";
@@ -16,8 +17,7 @@ export default function Sidebar() {
     setIsActivityOpen(!isActivityOpen);
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const navLinkClasses = (isActive: any) =>
+  const navLinkClasses = ({ isActive }: any) =>
     isActive
       ? "bg-primary-1 text-gray-100 rounded-xl font-800 text-16 leading-5"
       : "font-400 text-16 leading-5 text-gray-600";
