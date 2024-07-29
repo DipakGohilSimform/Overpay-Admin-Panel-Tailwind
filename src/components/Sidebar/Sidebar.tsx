@@ -16,7 +16,8 @@ export default function Sidebar() {
     setIsActivityOpen(!isActivityOpen);
   };
 
-  const navLinkClasses = ({ isActive }) =>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const navLinkClasses = (isActive: any) =>
     isActive
       ? "bg-primary-1 text-gray-100 rounded-xl font-800 text-16 leading-5"
       : "font-400 text-16 leading-5 text-gray-600";
@@ -27,7 +28,7 @@ export default function Sidebar() {
         <img src={Images.LogoSm} alt="logo" className="h-7" />
         <h3 className="text-gray-900 text-24 font-900">Overpay.</h3>
       </div>
-      <nav className="px-8 flex flex-col justify-between">
+      <nav className="flex flex-col justify-between px-8">
         <ul>
           <li>
             <NavLink
