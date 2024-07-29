@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import IconHome from "../Icons/IconHome";
 import IconInvoice from "../Icons/IconInvoice";
@@ -25,8 +25,13 @@ export default function Sidebar() {
   return (
     <aside className="fixed top-0 bottom-0 left-0 w-64 text-gray-600 bg-gray-50">
       <div className="flex gap-1 items-center py-9 border-solid border-b-[1px] border-b-gray-300 mx-9 mb-10">
-        <img src={Images.LogoSm} alt="logo" className="h-7" />
-        <h3 className="text-gray-900 text-24 font-900">Overpay.</h3>
+        <Link
+          to="#"
+          className="flex items-center gap-1 text-gray-900 text-24 font-900"
+        >
+          <img src={Images.LogoSm} alt="logo" className="h-7" />
+          Overpay.
+        </Link>
       </div>
       <nav className="flex flex-col justify-between px-8">
         <ul>
@@ -39,7 +44,9 @@ export default function Sidebar() {
                 })}`
               }
             >
-              <IconHome />
+              <div className="text-20">
+                <IconHome />
+              </div>
               Dashboard
             </NavLink>
           </li>
@@ -52,7 +59,9 @@ export default function Sidebar() {
                 })}`
               }
             >
-              <IconInvoice />
+              <div className="text-20">
+                <IconInvoice />
+              </div>
               Invoices
             </NavLink>
           </li>
@@ -65,7 +74,9 @@ export default function Sidebar() {
                 })}`
               }
             >
-              <IconMessage />
+              <div className="text-20">
+                <IconMessage />
+              </div>
               Messages
             </NavLink>
           </li>
@@ -78,7 +89,9 @@ export default function Sidebar() {
                 })}`
               }
             >
-              <IconTerminal />
+              <div className="text-20">
+                <IconTerminal />
+              </div>
               My Wallets
             </NavLink>
           </li>
@@ -91,14 +104,18 @@ export default function Sidebar() {
                 }
               )}`}
             >
-              <IconActivity />
+              <div className="text-20">
+                <IconActivity />
+              </div>
               Activity
               <div
                 className={`${
                   isActivityOpen === true ? "rotate-180" : ""
                 } absolute right-0 top-4`}
               >
-                <IconArrow />
+                <div className="text-20">
+                  <IconArrow />
+                </div>
               </div>
             </button>
             {isActivityOpen && (
@@ -129,19 +146,6 @@ export default function Sidebar() {
                 </li>
               </ul>
             )}
-          </li>
-          <li>
-            <NavLink
-              to="/intro"
-              className={({ isActive }) =>
-                `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
-                  isActive,
-                })}`
-              }
-            >
-              <IconAnalytics />
-              Analytics
-            </NavLink>
           </li>
         </ul>
       </nav>

@@ -18,15 +18,15 @@ function Messages() {
   return (
     <div>
       <Header title="Message" />
-      <div className="flex border-t border-gray-300">
+      <div className="flex -mx-10 -mb-5 border-t border-gray-300">
         {/* left-message-bar */}
-        <div className="basis-[340px] overflow-auto h-[calc(100vh-160px)] py-8 px-10">
+        <div className="basis-[340px] overflow-auto h-[calc(100vh-130px)] py-8 px-10">
           <div className="sticky top-0">
             <div className="relative mb-6">
               <span className="absolute text-gray-500 left-4 top-5">
                 <IconSearch />
               </span>
-              <Input placeholder="Search..." className="w-full pl-12" />
+              <Input placeholder="Search..." className="w-full h-12 pl-12" />
             </div>
           </div>
           <div className="py-4">
@@ -43,7 +43,7 @@ function Messages() {
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
                 2
               </span>
             </div>
@@ -62,7 +62,7 @@ function Messages() {
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
                 2
               </span>
             </div>
@@ -81,7 +81,7 @@ function Messages() {
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
                 2
               </span>
             </div>
@@ -100,7 +100,7 @@ function Messages() {
               <p className="leading-5 text-gray-900 text-14 font-500">
                 We almost done with brief!
               </p>
-              <span className="flex items-center justify-center w-6 h-6 text-white rounded-full bg-primary-1">
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
                 2
               </span>
             </div>
@@ -109,8 +109,8 @@ function Messages() {
         {/* message-bar-end */}
 
         {/* main-body */}
-        <div className="h-[calc(100vh-160px)] flex flex-col grow basis-auto border-l border-r border-gray-300">
-          <div className="flex basis-[100px] justify-between items-center p-6 border-b">
+        <div className="h-[calc(100vh-130px)] flex flex-col grow basis-auto border-l border-r border-gray-300">
+          <div className="flex basis-[100px] justify-between items-center p-6 border-b border-gray-300">
             <div className="flex items-center gap-4">
               <img src={Images.Avatar} alt="..." />
               <div>
@@ -137,7 +137,7 @@ function Messages() {
           <div className="flex flex-col p-6 overflow-auto grow basis-auto">
             <div className="flex flex-col items-start justify-start">
               <div className="flex items-center gap-4 mb-3">
-                <div className="p-4 bg-gray-100 rounded-custom-1 max-w-[303px] tracking-wider leading-5 text-gray-600 text-12 font-500">
+                <div className="p-4 bg-gray-200 rounded-custom-1 max-w-[303px] tracking-wider leading-5 text-gray-600 text-12 font-500">
                   Auctor urna, varius duis suspendisse mi in dictum. Interdum
                   egestas ut porttitor tortor aliquet massa.
                 </div>
@@ -175,7 +175,7 @@ function Messages() {
           <div className="basis-[130px] p-6">
             <Input
               placeholder="Type a message..."
-              className="w-full h-20 mb-4"
+              className="w-full h-20 mb-4 "
             />
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -194,7 +194,7 @@ function Messages() {
           </div>
         </div>
         {/* main-body-end */}
-        <div className="basis-[300px] h-[calc(100vh-160px)] overflow-auto p-6">
+        <div className="basis-[300px] h-[calc(100vh-130px)] overflow-auto p-6">
           <div className="flex items-center justify-end mb-7">
             <button className="flex items-center justify-center w-10 h-10 text-gray-600 border border-gray-200 rounded-full">
               <IconClose />

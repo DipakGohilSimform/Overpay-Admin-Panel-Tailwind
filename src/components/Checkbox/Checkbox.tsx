@@ -1,7 +1,10 @@
-export default function Checkbox() {
+interface CheckboxProps {
+  className?: string;
+}
+export default function Checkbox({ className }: CheckboxProps) {
   return (
     <label
-      className="relative flex items-center rounded-full cursor-pointer"
+      className={`relative flex items-center rounded-full cursor-pointer ${className}`}
       htmlFor="ripple-on"
       data-ripple-dark="true"
     >

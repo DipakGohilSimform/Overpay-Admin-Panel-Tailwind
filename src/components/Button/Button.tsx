@@ -21,7 +21,7 @@ function Button({
   const variantClasses =
     variant === "primary"
       ? "rounded-xl p-4 text-16 font-800 leading-6 text-gray-100 bg-primary-1 hover:bg-primary-2 "
-      : "rounded-xl p-4 text-16 font-800 leading-6 text-primary-1 border border-primary-1 border-solid hover:bg-gray-100";
+      : "rounded-xl p-4 text-16 font-800 leading-6 text-primary-1 border border-primary-1 border-solid hover:bg-gray-200";
 
   return (
     <button

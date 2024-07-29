@@ -39,7 +39,7 @@ function Transactions() {
         className="w-full text-sm text-left text-gray-500 rtl:text-right dark:text-gray-400"
       >
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          <tr className="bg-white border-t border-b dark:bg-gray-800 dark:border-gray-700">
+          <tr className="bg-white border-t border-b border-gray-300">
             <th scope="col" className="px-6 py-6">
               <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Name/Business
@@ -88,7 +88,7 @@ function Transactions() {
           </tr>
         </thead>
         <tbody>
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <tr className="bg-white border-t border-b border-gray-300">
             <th
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
@@ -133,7 +133,7 @@ function Transactions() {
               />
             </td>
           </tr>
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <tr className="bg-white border-t border-b border-gray-300">
             <th
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
@@ -178,7 +178,7 @@ function Transactions() {
               />
             </td>
           </tr>
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <tr className="bg-white border-t border-b border-gray-300">
             <th
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
@@ -223,7 +223,7 @@ function Transactions() {
               />
             </td>
           </tr>
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <tr className="bg-white border-t border-b border-gray-300">
             <th
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
@@ -268,7 +268,7 @@ function Transactions() {
               />
             </td>
           </tr>
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <tr className="bg-white border-t border-b border-gray-300">
             <th
               scope="row"
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"

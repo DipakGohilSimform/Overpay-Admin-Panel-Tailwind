@@ -30,7 +30,7 @@ function CreateInvoice() {
           Save Draft
         </Link>
       </div>
-      <div className="flex flex-wrap gap-12">
+      <div className="flex gap-12">
         <div className="grow shrink basis-auto">
           <div className="flex flex-wrap gap-10">
             <div className="grow">
@@ -125,7 +125,7 @@ function CreateInvoice() {
 
           <table className="w-full text-sm text-left text-gray-500 rtl:text-right ">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
-              <tr className="bg-white border-t border-b">
+              <tr className="bg-white border-b border-gray-300">
                 <th scope="col" className="px-6 py-6">
                   <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                     <span>
@@ -199,7 +199,7 @@ function CreateInvoice() {
                   $400.00
                 </td>
               </tr>
-              <tr className="bg-white border-b">
+              <tr className="bg-white border-b border-gray-300">
                 <td
                   scope="row"
                   className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
@@ -265,10 +265,10 @@ function CreateInvoice() {
                   className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
                 ></td>
                 <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
-                <td className="px-6 py-4 text-gray-900 border-b text-14 font-500">
+                <td className="px-6 py-4 text-gray-900 bg-white border-b border-gray-300 text-14 font-500">
                   Tax
                 </td>
-                <td className="px-6 py-4 border-b text-primary-1 text-14 font-800">
+                <td className="px-6 py-4 bg-white border-b border-gray-300 text-primary-1 text-14 font-800">
                   Add
                 </td>
               </tr>

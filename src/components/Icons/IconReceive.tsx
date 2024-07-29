@@ -1,22 +1,14 @@
 export default function IconRecieve() {
   return (
     <svg
-      width="57"
-      height="56"
-      viewBox="0 0 57 56"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect
-        x="0.833252"
-        y="0.5"
-        width="55"
-        height="55"
-        rx="11.5"
-        stroke="#EDF2F7"
-      />
       <path
-        d="M18 25.5H30.5"
+        d="M2 8.5H14.5"
         stroke="#22C55E"
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -24,7 +16,7 @@ export default function IconRecieve() {
         stroke-linejoin="round"
       />
       <path
-        d="M22 33.5H24"
+        d="M6 16.5H8"
         stroke="#22C55E"
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -32,7 +24,7 @@ export default function IconRecieve() {
         stroke-linejoin="round"
       />
       <path
-        d="M26.5 33.5H30.5"
+        d="M10.5 16.5H14.5"
         stroke="#22C55E"
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -40,21 +32,21 @@ export default function IconRecieve() {
         stroke-linejoin="round"
       />
       <path
-        d="M38 31.03V33.11C38 36.62 37.11 37.5 33.56 37.5H22.44C18.89 37.5 18 36.62 18 33.11V24.89C18 21.38 18.89 20.5 22.44 20.5H30.5"
+        d="M22 14.03V16.11C22 19.62 21.11 20.5 17.56 20.5H6.44C2.89 20.5 2 19.62 2 16.11V7.89C2 4.38 2.89 3.5 6.44 3.5H14.5"
         stroke="#22C55E"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M36 20.5V26.5L38 24.5"
+        d="M20 3.5V9.5L22 7.5"
         stroke="#22C55E"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M36 26.5L34 24.5"
+        d="M20 9.5L18 7.5"
         stroke="#22C55E"
         stroke-width="1.5"
         stroke-linecap="round"

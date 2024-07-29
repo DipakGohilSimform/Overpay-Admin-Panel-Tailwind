@@ -14,9 +14,9 @@ function AccountDetails() {
     <div>
       <Header title="Account details" />
       <div className="flex border-t border-gray-300">
-        <div className="basis-[370px] p-10 border-r">
-          <div className="p-7 rounded-2xl bg-primary-1 mb-12">
-            <div className="flex mb-8 gap-6 items-center">
+        <div className="basis-[370px] p-10 border-r border-gray-300">
+          <div className="mb-12 p-7 rounded-2xl bg-primary-1">
+            <div className="flex items-center gap-6 mb-8">
               <IconProgress />
               <div>
                 <h4 className="leading-6 text-gray-100 text-16 font-800">
@@ -30,13 +30,13 @@ function AccountDetails() {
             <Button
               text="Verify identity"
               variant="secondary"
-              className="bg-gray-100 w-full"
+              className="w-full bg-gray-100"
             />
           </div>
 
           <div>
-            <div className="flex gap-4 items-center py-6">
-              <div className="bg-gray-100 h-12 w-12 rounded-full flex justify-center items-center">
+            <div className="flex items-center gap-4 py-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full">
                 <IconUser />
               </div>
               <div>
@@ -49,8 +49,8 @@ function AccountDetails() {
               </div>
             </div>
 
-            <div className="flex gap-4 items-center py-6">
-              <div className="bg-gray-100 h-12 w-12 rounded-full flex justify-center items-center">
+            <div className="flex items-center gap-4 py-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full">
                 <IconDebit />
               </div>
               <div>
@@ -63,8 +63,8 @@ function AccountDetails() {
               </div>
             </div>
 
-            <div className="flex gap-4 items-center py-6">
-              <div className="bg-gray-100 h-12 w-12 rounded-full flex justify-center items-center">
+            <div className="flex items-center gap-4 py-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full">
                 <IconCalendar />
               </div>
               <div>
@@ -77,8 +77,8 @@ function AccountDetails() {
               </div>
             </div>
 
-            <div className="flex gap-4 items-center py-6">
-              <div className="bg-gray-100 h-12 w-12 rounded-full flex justify-center items-center">
+            <div className="flex items-center gap-4 py-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full">
                 <IconShield />
               </div>
               <div>
@@ -91,8 +91,8 @@ function AccountDetails() {
               </div>
             </div>
 
-            <div className="flex gap-4 items-center py-6">
-              <div className="bg-gray-100 h-12 w-12 rounded-full flex justify-center items-center">
+            <div className="flex items-center gap-4 py-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full">
                 <IconLock />
               </div>
               <div>
@@ -106,12 +106,12 @@ function AccountDetails() {
             </div>
           </div>
         </div>
-        <div className="basis-auto grow p-10">
+        <div className="p-10 basis-auto grow">
           <form action="">
-            <h2 className="leading-6 text-gray-900 text-24 font-800 mb-12">
+            <h2 className="mb-12 leading-6 text-gray-900 text-24 font-800">
               Personal Informations
             </h2>
-            <div className="flex gap-8 items-center mb-12">
+            <div className="flex items-center gap-8 mb-12">
               <img
                 src={Images.Avatar3}
                 alt="..."
@@ -155,7 +155,7 @@ function AccountDetails() {
             </div>
 
             <div>
-              <h3 className="leading-6 text-gray-900 text-20 font-800 mb-6">
+              <h3 className="mb-6 leading-6 text-gray-900 text-20 font-800">
                 Personal Address
               </h3>
               <div className="grid grid-cols-2 gap-6 mb-10">

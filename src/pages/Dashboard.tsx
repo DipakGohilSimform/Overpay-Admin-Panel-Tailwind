@@ -8,10 +8,16 @@ import IconInvoicesm from "@/components/Icons/IconInvoicesm";
 import IconMore from "@/components/Icons/IconMore";
 import IconRecieve from "@/components/Icons/IconReceive";
 import IconSend from "@/components/Icons/IconSend";
+import Select from "@/components/Select/Select";
 import Images from "@/config/images";
 import { Link } from "react-router-dom";
 
 export default function Dashboard() {
+  const options = [
+    { value: "option1", label: "Option 1" },
+    { value: "option2", label: "Option 2" },
+    { value: "option3", label: "Option 3" },
+  ];
   return (
     <div>
       <Header title="Dashboard" />
@@ -37,7 +43,8 @@ export default function Dashboard() {
               className="mr-[-32px] mb-[-32px] max-h-[185px]"
             />
           </div>
-          <div className="mb-8 bg-white rounded-2xl">
+
+          <div className="p-8 mb-8 bg-white border border-gray-300 rounded-2xl">
             <div className="flex items-center justify-between w-full mb-6">
               <h3 className="leading-6 text-gray-900 text-16 font-800">
                 Money Flow
@@ -61,14 +68,14 @@ export default function Dashboard() {
               <img src={Images.MoneyFlow} alt="money flow" className="w-full" />
             </div>
           </div>
-          <div className="p-8 min-h-[184px] bg-white rounded-2xl mb-8">
+          <div className="p-8 min-h-[184px] bg-white rounded-2xl mb-8 border border-gray-300">
             <div className="flex items-center justify-between w-full mb-6">
               <h3 className="leading-6 text-gray-900 text-16 font-800">
                 Recent Transactions
               </h3>
               <div className="flex gap-6">
                 <Link
-                  to="#"
+                  to="/transactions"
                   className="flex items-center gap-1 px-3 py-2 text-gray-900 transition-all rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-gray-200"
                 >
                   View all{" "}
@@ -82,7 +89,7 @@ export default function Dashboard() {
             <div className="relative overflow-x-auto">
               <table className="w-full text-sm text-left text-gray-500 rtl:text-right dark:text-gray-400">
                 <tbody>
-                  <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <tr className="bg-white border-b border-gray-300">
                     <th
                       scope="row"
                       className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
@@ -109,7 +116,7 @@ export default function Dashboard() {
                       </div>
                     </td>
                   </tr>
-                  <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <tr className="bg-white border-t border-b border-gray-300">
                     <th
                       scope="row"
                       className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
@@ -174,14 +181,14 @@ export default function Dashboard() {
               <h3 className="leading-6 text-gray-900 text-16 font-800">
                 Wallet
               </h3>
-              <div className="">
+              <button className="text-gray-400">
                 <IconDots />
-              </div>
+              </button>
             </div>
             <img src={Images.Card} alt="card" className="mb-16 rounded-2xl" />
             <div className="flex justify-between gap-5">
               <div>
-                <div className="flex items-center justify-center mb-4 border border-gray-200 h-14 w-14 rounded-xl">
+                <div className="flex items-center justify-center mb-4 border border-gray-300 h-14 w-14 rounded-xl">
                   <IconSend />
                 </div>
                 <p className="leading-5 text-center text-gray-600 text-14 font-600">
@@ -189,7 +196,7 @@ export default function Dashboard() {
                 </p>
               </div>
               <div>
-                <div className="flex items-center justify-center mb-4 border border-gray-200 h-14 w-14 rounded-xl">
+                <div className="flex items-center justify-center mb-4 border border-gray-300 h-14 w-14 rounded-xl">
                   <IconRecieve />
                 </div>
                 <p className="leading-5 text-center text-gray-600 text-14 font-600">
@@ -197,7 +204,7 @@ export default function Dashboard() {
                 </p>
               </div>
               <div>
-                <div className="flex items-center justify-center mb-4 border border-gray-200 h-14 w-14 rounded-xl">
+                <div className="flex items-center justify-center mb-4 border border-gray-300 h-14 w-14 rounded-xl">
                   <IconInvoicesm />
                 </div>
                 <p className="leading-5 text-center text-gray-600 text-14 font-600">
@@ -205,7 +212,7 @@ export default function Dashboard() {
                 </p>
               </div>
               <div>
-                <div className="flex items-center justify-center mb-4 border border-gray-200 h-14 w-14 rounded-xl">
+                <div className="flex items-center justify-center mb-4 border border-gray-300 h-14 w-14 rounded-xl">
                   <IconMore />
                 </div>
                 <p className="leading-5 text-center text-gray-600 text-14 font-600">
@@ -223,8 +230,13 @@ export default function Dashboard() {
             <div className="flex items-center justify-between p-4 mb-4 border border-gray-200 rounded-2xl">
               <img src={Images.Debit} alt="debit" className="h-5" />
               <div className="flex items-center justify-between gap-1 text-gray-900">
-                <p className="leading-5 text-14 font-800">$10,431</p>
-                <IconArrow />
+                {/* <p className="leading-5 text-14 font-800">$10,431</p> */}
+                <Select
+                  options={options}
+                  placeholder="$10,431"
+                  className="w-32 border-none"
+                />
+                {/* <IconArrow /> */}
               </div>
             </div>
             <div className="p-4 mb-8 border border-primary-1 rounded-2xl">

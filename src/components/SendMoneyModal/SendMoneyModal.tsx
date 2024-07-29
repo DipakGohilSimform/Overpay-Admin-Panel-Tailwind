@@ -74,7 +74,7 @@ function SendMoneyModal({ isOpen, onClose }: ModalProps) {
         <h3 className="leading-6 text-gray-900 text-16 font-800">
           Choose Method
         </h3>
-        <button className="border border-gray-200 rounded-3xl flex items-center gap-[2px] justify-center px-3 py-2">
+        <button className="text-gray-900 leading-5 text-12 font-500 border border-gray-200 rounded-3xl flex items-center gap-[2px] justify-center px-3 py-2">
           Add
           <span>
             <IconPlus />
@@ -86,7 +86,7 @@ function SendMoneyModal({ isOpen, onClose }: ModalProps) {
         <div className="grow">
           <div className="flex items-center justify-between p-4 mb-3 border border-gray-200 grow rounded-2xl">
             <div className="flex gap-3 mr-6">
-              <div className="flex items-center justify-center w-10 h-10">
+              <div className="flex items-center justify-center w-10 h-10 text-gray-900 rounded-full bg-gray-50">
                 <IconVisa />
               </div>
               <div>
@@ -103,7 +103,7 @@ function SendMoneyModal({ isOpen, onClose }: ModalProps) {
 
           <div className="flex items-center justify-between p-4 mb-3 border border-gray-200 grow rounded-2xl">
             <div className="flex gap-3 mr-6">
-              <div className="flex items-center justify-center w-10 h-10">
+              <div className="flex items-center justify-center w-10 h-10 text-gray-900 rounded-full bg-gray-50">
                 <IconVisa />
               </div>
               <div>
@@ -120,7 +120,7 @@ function SendMoneyModal({ isOpen, onClose }: ModalProps) {
 
           <div className="flex items-center justify-between p-4 border border-gray-200 grow rounded-2xl">
             <div className="flex gap-3 mr-6">
-              <div className="flex items-center justify-center w-10 h-10">
+              <div className="flex items-center justify-center w-10 h-10 text-gray-900 rounded-full bg-gray-50">
                 <IconVisa />
               </div>
               <div>

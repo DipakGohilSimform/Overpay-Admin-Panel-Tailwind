@@ -1,36 +1,28 @@
 export default function IconInvoicesm() {
   return (
     <svg
-      width="57"
-      height="56"
-      viewBox="0 0 57 56"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect
-        x="0.666992"
-        y="0.5"
-        width="55"
-        height="55"
-        rx="11.5"
-        stroke="#EDF2F7"
-      />
       <path
-        d="M22.73 36.7C23.55 35.82 24.8 35.89 25.52 36.85L26.53 38.2C27.34 39.27 28.65 39.27 29.46 38.2L30.47 36.85C31.19 35.89 32.44 35.82 33.26 36.7C35.04 38.6 36.49 37.97 36.49 35.31V24.04C36.5 20.01 35.56 19 31.78 19H24.22C20.44 19 19.5 20.01 19.5 24.04V35.3C19.5 37.97 20.96 38.59 22.73 36.7Z"
+        d="M6.73 19.7C7.55 18.82 8.8 18.89 9.52 19.85L10.53 21.2C11.34 22.27 12.65 22.27 13.46 21.2L14.47 19.85C15.19 18.89 16.44 18.82 17.26 19.7C19.04 21.6 20.49 20.97 20.49 18.31V7.04C20.5 3.01 19.56 2 15.78 2H8.22C4.44 2 3.5 3.01 3.5 7.04V18.3C3.5 20.97 4.96 21.59 6.73 19.7Z"
         stroke="#FACC15"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M24 24H32"
+        d="M8 7H16"
         stroke="#FACC15"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M25 28H31"
+        d="M9 11H15"
         stroke="#FACC15"
         stroke-width="1.5"
         stroke-linecap="round"

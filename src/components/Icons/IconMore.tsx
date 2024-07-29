@@ -1,42 +1,41 @@
 export default function IconMore() {
   return (
     <svg
-      width="56"
-      height="56"
-      viewBox="0 0 56 56"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect x="0.5" y="0.5" width="55" height="55" rx="11.5" stroke="#EDF2F7" />
       <path
-        d="M38 25.27V21.23C38 19.64 37.36 19 35.77 19H31.73C30.14 19 29.5 19.64 29.5 21.23V25.27C29.5 26.86 30.14 27.5 31.73 27.5H35.77C37.36 27.5 38 26.86 38 25.27Z"
+        d="M22 8.27V4.23C22 2.64 21.36 2 19.77 2H15.73C14.14 2 13.5 2.64 13.5 4.23V8.27C13.5 9.86 14.14 10.5 15.73 10.5H19.77C21.36 10.5 22 9.86 22 8.27Z"
         stroke="#194BFB"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M26.5 25.52V20.98C26.5 19.57 25.86 19 24.27 19H20.23C18.64 19 18 19.57 18 20.98V25.51C18 26.93 18.64 27.49 20.23 27.49H24.27C25.86 27.5 26.5 26.93 26.5 25.52Z"
+        d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
         stroke="#194BFB"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M26.5 36.77V32.73C26.5 31.14 25.86 30.5 24.27 30.5H20.23C18.64 30.5 18 31.14 18 32.73V36.77C18 38.36 18.64 39 20.23 39H24.27C25.86 39 26.5 38.36 26.5 36.77Z"
+        d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
         stroke="#194BFB"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M30.5 34.5H36.5"
+        d="M14.5 17.5H20.5"
         stroke="#194BFB"
         stroke-width="1.5"
         stroke-linecap="round"
       />
       <path
-        d="M33.5 37.5V31.5"
+        d="M17.5 20.5V14.5"
         stroke="#194BFB"
         stroke-width="1.5"
         stroke-linecap="round"
