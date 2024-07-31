@@ -111,7 +111,7 @@ export default function Dashboard() {
                       -$835.00
                     </td>
                     <td className="px-6 py-4">
-                      <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4">
+                      <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4/10">
                         Success
                       </div>
                     </td>
@@ -138,7 +138,7 @@ export default function Dashboard() {
                       -$835.00
                     </td>
                     <td className="px-6 py-4">
-                      <div className="w-20 px-3 py-2 rounded-lg text-orange bg-error-4">
+                      <div className="w-20 px-3 py-2 rounded-lg text-orange bg-error-4/5">
                         Pending
                       </div>
                     </td>
@@ -165,7 +165,7 @@ export default function Dashboard() {
                       -$835.00
                     </td>
                     <td className="px-6 py-4">
-                      <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4">
+                      <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4/10">
                         Success
                       </div>
                     </td>
@@ -230,16 +230,11 @@ export default function Dashboard() {
             <div className="flex items-center justify-between p-4 mb-4 border border-gray-200 rounded-2xl">
               <img src={Images.Debit} alt="debit" className="h-5" />
               <div className="flex items-center justify-between gap-1 text-gray-900">
-                {/* <p className="leading-5 text-14 font-800">$10,431</p> */}
-                <Select
-                  options={options}
-                  placeholder="$10,431"
-                  className="w-32 border-none"
-                />
-                {/* <IconArrow /> */}
+                <p className="leading-5 text-14 font-800">$10,431</p>
+                <IconArrow />
               </div>
             </div>
-            <div className="p-4 mb-8 border border-primary-1 rounded-2xl">
+            <div className="p-4 mb-8 border border-gray-200 rounded-2xl">
               <p className="mb-4 leading-4 text-gray-600 text-12 font-500">
                 Enter Amount
               </p>

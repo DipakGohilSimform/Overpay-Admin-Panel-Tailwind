@@ -8,6 +8,8 @@ import IconTerminal from "../Icons/IconTerminal";
 import IconActivity from "../Icons/IconActivity";
 import Images from "@/config/images";
 import IconArrow from "../Icons/IconArrow";
+import IconHelp from "../Icons/IconHelp";
+import IconSetting from "../Icons/IconSetting";
 
 export default function Sidebar() {
   const [isActivityOpen, setIsActivityOpen] = useState(false);
@@ -32,121 +34,157 @@ export default function Sidebar() {
           Overpay.
         </Link>
       </div>
-      <nav className="flex flex-col justify-between px-8">
-        <ul>
-          <li>
-            <NavLink
-              to="/dashboard"
-              className={({ isActive }) =>
-                `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
-                  isActive,
-                })}`
-              }
-            >
-              <div className="text-20">
-                <IconHome />
-              </div>
-              Dashboard
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/invoices"
-              className={({ isActive }) =>
-                `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
-                  isActive,
-                })}`
-              }
-            >
-              <div className="text-20">
-                <IconInvoice />
-              </div>
-              Invoices
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/messages"
-              className={({ isActive }) =>
-                `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
-                  isActive,
-                })}`
-              }
-            >
-              <div className="text-20">
-                <IconMessage />
-              </div>
-              Messages
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/my-wallet"
-              className={({ isActive }) =>
-                `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
-                  isActive,
-                })}`
-              }
-            >
-              <div className="text-20">
-                <IconTerminal />
-              </div>
-              My Wallets
-            </NavLink>
-          </li>
-          <li>
-            <button
-              onClick={toggleActivitySubmenu}
-              className={`relative flex items-center w-full text-left p-3 gap-3 mb-3 ${navLinkClasses(
-                {
-                  isActive: false,
+      <nav className="flex flex-col justify-between px-8 h-[calc(100vh-170px)]">
+        <div>
+          <ul>
+            <li>
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) =>
+                  `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                    isActive,
+                  })}`
                 }
-              )}`}
-            >
-              <div className="text-20">
-                <IconActivity />
-              </div>
-              Activity
-              <div
-                className={`${
-                  isActivityOpen === true ? "rotate-180" : ""
-                } absolute right-0 top-4`}
               >
                 <div className="text-20">
-                  <IconArrow />
+                  <IconHome />
                 </div>
-              </div>
-            </button>
-            {isActivityOpen && (
-              <ul className="ml-6">
-                <li>
-                  <NavLink
-                    to="/transactions"
-                    className={({ isActive }) =>
-                      `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
-                        isActive,
-                      })}`
-                    }
-                  >
-                    Transactions
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/recipients"
-                    className={({ isActive }) =>
-                      `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
-                        isActive,
-                      })}`
-                    }
-                  >
-                    Recipients
-                  </NavLink>
-                </li>
-              </ul>
-            )}
-          </li>
-        </ul>
+                Dashboard
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/invoices"
+                className={({ isActive }) =>
+                  `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                    isActive,
+                  })}`
+                }
+              >
+                <div className="text-20">
+                  <IconInvoice />
+                </div>
+                Invoices
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/messages"
+                className={({ isActive }) =>
+                  `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                    isActive,
+                  })}`
+                }
+              >
+                <div className="text-20">
+                  <IconMessage />
+                </div>
+                Messages
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/my-wallet"
+                className={({ isActive }) =>
+                  `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                    isActive,
+                  })}`
+                }
+              >
+                <div className="text-20">
+                  <IconTerminal />
+                </div>
+                My Wallets
+              </NavLink>
+            </li>
+            <li>
+              <button
+                onClick={toggleActivitySubmenu}
+                className={`relative flex items-center w-full text-left p-3 gap-3 mb-3 ${navLinkClasses(
+                  {
+                    isActive: false,
+                  }
+                )}`}
+              >
+                <div className="text-20">
+                  <IconActivity />
+                </div>
+                Activity
+                <div
+                  className={`${
+                    isActivityOpen === true ? "rotate-180" : ""
+                  } absolute right-0 top-4`}
+                >
+                  <div className="text-20">
+                    <IconArrow />
+                  </div>
+                </div>
+              </button>
+              {isActivityOpen && (
+                <ul className="ml-6">
+                  <li>
+                    <NavLink
+                      to="/transactions"
+                      className={({ isActive }) =>
+                        `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                          isActive,
+                        })}`
+                      }
+                    >
+                      Transactions
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/recipients"
+                      className={({ isActive }) =>
+                        `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                          isActive,
+                        })}`
+                      }
+                    >
+                      Recipients
+                    </NavLink>
+                  </li>
+                </ul>
+              )}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <NavLink
+                to="/get-help"
+                className={({ isActive }) =>
+                  `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                    isActive,
+                  })}`
+                }
+              >
+                <div className="text-20">
+                  <IconHelp />
+                </div>
+                Get Help
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/setting"
+                className={({ isActive }) =>
+                  `flex items-center p-3 gap-3 mb-3 ${navLinkClasses({
+                    isActive,
+                  })}`
+                }
+              >
+                <div className="text-20">
+                  <IconSetting />
+                </div>
+                Settings
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </nav>
     </aside>
   );

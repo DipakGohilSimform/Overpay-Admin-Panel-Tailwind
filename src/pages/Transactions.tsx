@@ -41,49 +41,49 @@ function Transactions() {
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr className="bg-white border-t border-b border-gray-300">
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Name/Business
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Date
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Invoice ID
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Amount
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Status
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Actions
-              </p>
+              </label>
             </th>
           </tr>
         </thead>
@@ -98,9 +98,9 @@ function Transactions() {
                 <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
                   Stripe
                 </p>
-                <p className="leading-5 text-gray-600 text-14 font-500">
+                <label className="leading-5 text-gray-600 text-14 font-500">
                   Witdraw
-                </p>
+                </label>
               </div>
             </th>
             <td className="px-6 py-4 ">
@@ -109,9 +109,9 @@ function Transactions() {
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-500">
                     Jan 29, 2022
                   </p>
-                  <p className="leading-5 text-gray-600 text-14 font-500">
+                  <label className="leading-5 text-gray-600 text-14 font-500">
                     at 08.00 PM
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -121,12 +121,12 @@ function Transactions() {
             <td className="px-6 py-4 text-gray-900 text-14 font-800">
               +$300.00
             </td>
-            <td>
-              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4">
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4/10">
                 Success
               </div>
             </td>
-            <td>
+            <td className="px-6 py-4">
               <Button
                 text="Filters"
                 className="!h-10 !border-gray-300 !text-gray-900"
@@ -143,9 +143,9 @@ function Transactions() {
                 <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
                   Stripe
                 </p>
-                <p className="leading-5 text-gray-600 text-14 font-500">
+                <label className="leading-5 text-gray-600 text-14 font-500">
                   Witdraw
-                </p>
+                </label>
               </div>
             </th>
             <td className="px-6 py-4 ">
@@ -154,9 +154,9 @@ function Transactions() {
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-500">
                     Jan 29, 2022
                   </p>
-                  <p className="leading-5 text-gray-600 text-14 font-500">
+                  <label className="leading-5 text-gray-600 text-14 font-500">
                     at 08.00 PM
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -166,12 +166,12 @@ function Transactions() {
             <td className="px-6 py-4 text-gray-900 text-14 font-800">
               +$300.00
             </td>
-            <td>
-              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4">
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4/10">
                 Success
               </div>
             </td>
-            <td>
+            <td className="px-6 py-4">
               <Button
                 text="Filters"
                 className="!h-10 !border-gray-300 !text-gray-900"
@@ -188,9 +188,9 @@ function Transactions() {
                 <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
                   Stripe
                 </p>
-                <p className="leading-5 text-gray-600 text-14 font-500">
+                <label className="leading-5 text-gray-600 text-14 font-500">
                   Witdraw
-                </p>
+                </label>
               </div>
             </th>
             <td className="px-6 py-4 ">
@@ -199,9 +199,9 @@ function Transactions() {
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-500">
                     Jan 29, 2022
                   </p>
-                  <p className="leading-5 text-gray-600 text-14 font-500">
+                  <label className="leading-5 text-gray-600 text-14 font-500">
                     at 08.00 PM
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -211,12 +211,12 @@ function Transactions() {
             <td className="px-6 py-4 text-gray-900 text-14 font-800">
               +$300.00
             </td>
-            <td>
-              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4">
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4/10">
                 Success
               </div>
             </td>
-            <td>
+            <td className="px-6 py-4">
               <Button
                 text="Filters"
                 className="!h-10 !border-gray-300 !text-gray-900"
@@ -233,9 +233,9 @@ function Transactions() {
                 <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
                   Stripe
                 </p>
-                <p className="leading-5 text-gray-600 text-14 font-500">
+                <label className="leading-5 text-gray-600 text-14 font-500">
                   Witdraw
-                </p>
+                </label>
               </div>
             </th>
             <td className="px-6 py-4 ">
@@ -244,9 +244,9 @@ function Transactions() {
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-500">
                     Jan 29, 2022
                   </p>
-                  <p className="leading-5 text-gray-600 text-14 font-500">
+                  <label className="leading-5 text-gray-600 text-14 font-500">
                     at 08.00 PM
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -256,12 +256,12 @@ function Transactions() {
             <td className="px-6 py-4 text-gray-900 text-14 font-800">
               +$300.00
             </td>
-            <td>
-              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4">
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4/10">
                 Success
               </div>
             </td>
-            <td>
+            <td className="px-6 py-4">
               <Button
                 text="Filters"
                 className="!h-10 !border-gray-300 !text-gray-900"
@@ -278,9 +278,9 @@ function Transactions() {
                 <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
                   Stripe
                 </p>
-                <p className="leading-5 text-gray-600 text-14 font-500">
+                <label className="leading-5 text-gray-600 text-14 font-500">
                   Witdraw
-                </p>
+                </label>
               </div>
             </th>
             <td className="px-6 py-4 ">
@@ -289,9 +289,9 @@ function Transactions() {
                   <p className="mb-1 leading-6 text-gray-900 text-16 font-500">
                     Jan 29, 2022
                   </p>
-                  <p className="leading-5 text-gray-600 text-14 font-500">
+                  <label className="leading-5 text-gray-600 text-14 font-500">
                     at 08.00 PM
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -301,12 +301,12 @@ function Transactions() {
             <td className="px-6 py-4 text-gray-900 text-14 font-800">
               +$300.00
             </td>
-            <td>
-              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4">
+            <td className="px-6 py-4">
+              <div className="w-20 px-3 py-2 rounded-lg text-success-1 bg-success-4/10">
                 Success
               </div>
             </td>
-            <td>
+            <td className="px-6 py-4">
               <Button
                 text="Filters"
                 className="!h-10 !border-gray-300 !text-gray-900"

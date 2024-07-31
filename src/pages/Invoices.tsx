@@ -142,7 +142,7 @@ function Invoices() {
               $1,240.00
             </td>
             <td className="px-6 py-4">
-              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4/10">
                 Paid
               </div>
             </td>
@@ -186,7 +186,7 @@ function Invoices() {
               $1,240.00
             </td>
             <td className="px-6 py-4">
-              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4/10">
                 Paid
               </div>
             </td>
@@ -230,7 +230,7 @@ function Invoices() {
               $1,240.00
             </td>
             <td className="px-6 py-4">
-              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4/10">
                 Paid
               </div>
             </td>
@@ -274,7 +274,7 @@ function Invoices() {
               $1,240.00
             </td>
             <td className="px-6 py-4">
-              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4/10">
                 Paid
               </div>
             </td>
@@ -318,7 +318,7 @@ function Invoices() {
               $1,240.00
             </td>
             <td className="px-6 py-4">
-              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4/10">
                 Paid
               </div>
             </td>
@@ -362,7 +362,7 @@ function Invoices() {
               $1,240.00
             </td>
             <td className="px-6 py-4">
-              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4">
+              <div className="w-20 px-3 py-2 text-center rounded-lg text-success-1 bg-success-4/10">
                 Paid
               </div>
             </td>

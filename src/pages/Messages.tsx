@@ -13,6 +13,7 @@ import IconSearch from "@/components/Icons/IconSearch";
 import IconVideo from "@/components/Icons/IconVideo";
 import Input from "@/components/Input/Input";
 import Images from "@/config/images";
+import { Link } from "react-router-dom";
 
 function Messages() {
   return (
@@ -20,16 +21,19 @@ function Messages() {
       <Header title="Message" />
       <div className="flex -mx-10 -mb-5 border-t border-gray-300">
         {/* left-message-bar */}
-        <div className="basis-[340px] overflow-auto h-[calc(100vh-130px)] py-8 px-10">
-          <div className="sticky top-0">
-            <div className="relative mb-6">
-              <span className="absolute text-gray-500 left-4 top-5">
+        <div className="basis-[340px] overflow-auto h-[calc(100vh-130px)] ">
+          <div className="sticky top-0 px-10 pb-6 bg-white pt-9">
+            <div className="relative ">
+              <span className="absolute text-gray-500 left-4 top-4">
                 <IconSearch />
               </span>
               <Input placeholder="Search..." className="w-full h-12 pl-12" />
             </div>
           </div>
-          <div className="py-4">
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
@@ -47,8 +51,11 @@ function Messages() {
                 2
               </span>
             </div>
-          </div>
-          <div className="py-4">
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
@@ -66,8 +73,11 @@ function Messages() {
                 2
               </span>
             </div>
-          </div>
-          <div className="py-4">
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
@@ -85,8 +95,11 @@ function Messages() {
                 2
               </span>
             </div>
-          </div>
-          <div className="py-4">
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img src={Images.Avatar} alt="..." />
@@ -104,7 +117,139 @@ function Messages() {
                 2
               </span>
             </div>
-          </div>
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <img src={Images.Avatar} alt="..." />
+                <p className="leading-6 text-gray-900 text-16 font-800">
+                  Bertolt Reiner
+                </p>
+              </div>
+              <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="leading-5 text-gray-900 text-14 font-500">
+                We almost done with brief!
+              </p>
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
+                2
+              </span>
+            </div>
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <img src={Images.Avatar} alt="..." />
+                <p className="leading-6 text-gray-900 text-16 font-800">
+                  Bertolt Reiner
+                </p>
+              </div>
+              <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="leading-5 text-gray-900 text-14 font-500">
+                We almost done with brief!
+              </p>
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
+                2
+              </span>
+            </div>
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <img src={Images.Avatar} alt="..." />
+                <p className="leading-6 text-gray-900 text-16 font-800">
+                  Bertolt Reiner
+                </p>
+              </div>
+              <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="leading-5 text-gray-900 text-14 font-500">
+                We almost done with brief!
+              </p>
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
+                2
+              </span>
+            </div>
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <img src={Images.Avatar} alt="..." />
+                <p className="leading-6 text-gray-900 text-16 font-800">
+                  Bertolt Reiner
+                </p>
+              </div>
+              <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="leading-5 text-gray-900 text-14 font-500">
+                We almost done with brief!
+              </p>
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
+                2
+              </span>
+            </div>
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <img src={Images.Avatar} alt="..." />
+                <p className="leading-6 text-gray-900 text-16 font-800">
+                  Bertolt Reiner
+                </p>
+              </div>
+              <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="leading-5 text-gray-900 text-14 font-500">
+                We almost done with brief!
+              </p>
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
+                2
+              </span>
+            </div>
+          </Link>
+          <Link
+            to="#"
+            className="inline-block w-full px-10 py-4 transition-all hover:bg-gray-200"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <img src={Images.Avatar} alt="..." />
+                <p className="leading-6 text-gray-900 text-16 font-800">
+                  Bertolt Reiner
+                </p>
+              </div>
+              <p className="leading-5 text-gray-900 text-164 font-500">01.00</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="leading-5 text-gray-900 text-14 font-500">
+                We almost done with brief!
+              </p>
+              <span className="flex items-center justify-center w-6 h-6 text-gray-100 rounded-full bg-primary-1">
+                2
+              </span>
+            </div>
+          </Link>
         </div>
         {/* message-bar-end */}
 

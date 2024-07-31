@@ -3,6 +3,7 @@ interface SwitchProps {
   handleToggle?: () => void;
   onColor?: string;
   offColor?: string;
+  className?: string;
 }
 
 function Switch(props: SwitchProps) {
@@ -11,10 +12,11 @@ function Switch(props: SwitchProps) {
     handleToggle,
     onColor = "bg-primary-1",
     offColor = "bg-gray-300",
+    className,
   } = props;
   return (
     <div
-      className={`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 ${
+      className={`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 ${className} ${
         isOn ? onColor : offColor
       }`}
       onClick={handleToggle}

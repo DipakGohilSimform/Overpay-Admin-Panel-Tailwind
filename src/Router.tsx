@@ -14,6 +14,7 @@ import CreateInvoice from "./pages/CreateInvoice";
 import Messages from "./pages/Messages";
 import AccountDetails from "./pages/AccountDetails";
 import AccountSetting from "./pages/AccountSetting";
+import GetHelp from "./pages/GetHelp";
 
 export const Router = createBrowserRouter([
   {
@@ -63,6 +64,11 @@ export const Router = createBrowserRouter([
         path: "/account-setting",
         index: true,
         element: <AccountSetting />,
+      },
+      {
+        path: "/get-help",
+        index: true,
+        element: <GetHelp />,
       },
     ],
   },

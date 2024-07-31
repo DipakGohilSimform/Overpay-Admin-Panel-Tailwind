@@ -54,44 +54,44 @@ function Recipients() {
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr className="bg-white border-t border-b border-gray-300">
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Name/Business
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Email
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Account type
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Currency
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
             <th scope="col" className="px-6 py-6">
-              <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+              <label className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
                 Currency
                 <span>
                   <IconSortArrow />
                 </span>
-              </p>
+              </label>
             </th>
           </tr>
         </thead>
@@ -102,16 +102,16 @@ function Recipients() {
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
               <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+              <label className="mb-1 leading-6 text-gray-900 text-16 font-800">
                 Guy Hawkins
-              </p>
+              </label>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
-                  <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
+                  <label className="mb-1 leading-6 text-gray-900 text-16 font-600">
                     guy.hawkins@mail.com
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -121,7 +121,9 @@ function Recipients() {
             <td>
               <div className="flex items-center gap-2 p-6">
                 <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+                <label className="leading-6 text-gray-900 text-16 font-600">
+                  USD
+                </label>
               </div>
             </td>
             <td className="leading-6 text-gray-900 text-16 font-600">
@@ -134,16 +136,16 @@ function Recipients() {
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
               <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+              <label className="mb-1 leading-6 text-gray-900 text-16 font-800">
                 Guy Hawkins
-              </p>
+              </label>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
-                  <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
+                  <label className="mb-1 leading-6 text-gray-900 text-16 font-600">
                     guy.hawkins@mail.com
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -153,7 +155,9 @@ function Recipients() {
             <td>
               <div className="flex items-center gap-2 p-6">
                 <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+                <label className="leading-6 text-gray-900 text-16 font-600">
+                  USD
+                </label>
               </div>
             </td>
             <td className="leading-6 text-gray-900 text-16 font-600">
@@ -166,16 +170,16 @@ function Recipients() {
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
               <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+              <label className="mb-1 leading-6 text-gray-900 text-16 font-800">
                 Guy Hawkins
-              </p>
+              </label>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
-                  <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
+                  <label className="mb-1 leading-6 text-gray-900 text-16 font-600">
                     guy.hawkins@mail.com
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -185,7 +189,9 @@ function Recipients() {
             <td>
               <div className="flex items-center gap-2 p-6">
                 <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+                <label className="leading-6 text-gray-900 text-16 font-600">
+                  USD
+                </label>
               </div>
             </td>
             <td className="leading-6 text-gray-900 text-16 font-600">
@@ -198,16 +204,16 @@ function Recipients() {
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
               <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+              <label className="mb-1 leading-6 text-gray-900 text-16 font-800">
                 Guy Hawkins
-              </p>
+              </label>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
-                  <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
+                  <label className="mb-1 leading-6 text-gray-900 text-16 font-600">
                     guy.hawkins@mail.com
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -217,7 +223,9 @@ function Recipients() {
             <td>
               <div className="flex items-center gap-2 p-6">
                 <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+                <label className="leading-6 text-gray-900 text-16 font-600">
+                  USD
+                </label>
               </div>
             </td>
             <td className="leading-6 text-gray-900 text-16 font-600">
@@ -230,16 +238,16 @@ function Recipients() {
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
               <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+              <label className="mb-1 leading-6 text-gray-900 text-16 font-800">
                 Guy Hawkins
-              </p>
+              </label>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
-                  <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
+                  <label className="mb-1 leading-6 text-gray-900 text-16 font-600">
                     guy.hawkins@mail.com
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -249,7 +257,9 @@ function Recipients() {
             <td>
               <div className="flex items-center gap-2 p-6">
                 <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+                <label className="leading-6 text-gray-900 text-16 font-600">
+                  USD
+                </label>
               </div>
             </td>
             <td className="leading-6 text-gray-900 text-16 font-600">
@@ -262,16 +272,16 @@ function Recipients() {
               className="flex items-center gap-4 px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap dark:text-white"
             >
               <img src={Images.Avatar} alt="bitcoin" className="w-10 h-10" />
-              <p className="mb-1 leading-6 text-gray-900 text-16 font-800">
+              <label className="mb-1 leading-6 text-gray-900 text-16 font-800">
                 Guy Hawkins
-              </p>
+              </label>
             </th>
             <td className="px-6 py-4 ">
               <div className="flex items-center gap-1 text-gray-600 text-14 font-500">
                 <div>
-                  <p className="mb-1 leading-6 text-gray-900 text-16 font-600">
+                  <label className="mb-1 leading-6 text-gray-900 text-16 font-600">
                     guy.hawkins@mail.com
-                  </p>
+                  </label>
                 </div>
               </div>
             </td>
@@ -281,7 +291,9 @@ function Recipients() {
             <td>
               <div className="flex items-center gap-2 p-6">
                 <img src={Images.USD} alt="usd" className="w-6 h-6" />
-                <p className="leading-6 text-gray-900 text-16 font-600">USD</p>
+                <label className="leading-6 text-gray-900 text-16 font-600">
+                  USD
+                </label>
               </div>
             </td>
             <td className="leading-6 text-gray-900 text-16 font-600">
@@ -296,40 +308,47 @@ function Recipients() {
             Add Recipient
           </h2>
         </div>
-        <div className="mb-6">
-          <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
-            Currency
-          </h3>
-          <Select options={options} placeholder="Select an option" />
-        </div>
-        <div className="mb-6">
-          <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
-            Recipient type
-          </h3>
-          <Select options={options} placeholder="Select an option" />
-        </div>
-        <div className="mb-6">
-          <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
-            Email
-          </h3>
-          <Input placeholder="Enter email" className="h-12" />
-        </div>
-        <div className="mb-6">
-          <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
-            Full name of the account holder
-          </h3>
-          <Input
-            placeholder="Enter full name of the account holder"
-            className="h-12"
-          />
-        </div>
-        <h2 className="pb-3 mb-4 leading-6 text-gray-900 border-b border-gray-200 text-16 font-800">
-          Bank Details
-        </h2>
-        <div className="mb-6">
-          <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">IBN</h3>
-          <Input placeholder="OV1286709756483" className="h-12" />
-        </div>
+        <form
+          action="
+        "
+        >
+          <div className="mb-6">
+            <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
+              Currency
+            </h3>
+            <Select options={options} placeholder="Select an option" />
+          </div>
+          <div className="mb-6">
+            <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
+              Recipient type
+            </h3>
+            <Select options={options} placeholder="Select an option" />
+          </div>
+          <div className="mb-6">
+            <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
+              Email
+            </h3>
+            <Input placeholder="Enter email" className="h-12" />
+          </div>
+          <div className="mb-6">
+            <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
+              Full name of the account holder
+            </h3>
+            <Input
+              placeholder="Enter full name of the account holder"
+              className="h-12"
+            />
+          </div>
+          <h2 className="pb-3 mb-4 leading-6 text-gray-900 border-b border-gray-200 text-16 font-800">
+            Bank Details
+          </h2>
+          <div className="mb-6">
+            <h3 className="mb-3 leading-5 text-gray-600 text-14 font-800">
+              IBN
+            </h3>
+            <Input placeholder="OV1286709756483" className="h-12" />
+          </div>
+        </form>
       </Modal>
     </div>
   );
