@@ -122,175 +122,180 @@ function CreateInvoice() {
               </div>
             </div>
           </div>
-
-          <table className="w-full text-sm text-left text-gray-500 rtl:text-right ">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
-              <tr className="bg-white border-b border-gray-300">
-                <th scope="col" className="px-6 py-6">
-                  <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                    <span>
-                      <IconItem />
-                    </span>
-                    ITEM
-                  </p>
-                </th>
-                <th scope="col" className="px-6 py-6">
-                  <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                    QTY
-                  </p>
-                </th>
-                <th scope="col" className="px-6 py-6">
-                  <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                    HOURS
-                  </p>
-                </th>
-                <th scope="col" className="px-6 py-6">
-                  <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                    RATE
-                  </p>
-                </th>
-                <th scope="col" className="px-6 py-6">
-                  <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
-                    TOTAL
-                  </p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="bg-white">
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                >
-                  Bitcoin transactions
-                </td>
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                >
-                  1
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">40</td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  $10.00
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  $400.00
-                </td>
-              </tr>
-              <tr className="bg-white">
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                >
-                  Bitcoin transactions
-                </td>
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                >
-                  1
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">40</td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  $10.00
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  $400.00
-                </td>
-              </tr>
-              <tr className="bg-white border-b border-gray-300">
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                >
-                  <Input placeholder="Description" />
-                </td>
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                >
-                  <Input placeholder="0" />
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  <Input placeholder="0" />
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  <Input placeholder="0" />
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  $0.00
-                </td>
-              </tr>
-              <tr className="bg-white">
-                <td className="px-6 py-4 text-primary-1 text-14 font-800">
-                  Add Item
-                </td>
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                ></td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-500 ">
-                  Subtotal
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800 ">
-                  $8,856.00
-                </td>
-              </tr>
-              <tr className="bg-white">
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                ></td>
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                ></td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-500">
-                  Discount
-                </td>
-                <td className="px-6 py-4 text-primary-1 text-14 font-800">
-                  Add
-                </td>
-              </tr>
-              <tr className="bg-white">
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                ></td>
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                ></td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
-                <td className="px-6 py-4 text-gray-900 bg-white border-b border-gray-300 text-14 font-500">
-                  Tax
-                </td>
-                <td className="px-6 py-4 bg-white border-b border-gray-300 text-primary-1 text-14 font-800">
-                  Add
-                </td>
-              </tr>
-              <tr className="bg-white">
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                ></td>
-                <td
-                  scope="row"
-                  className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
-                ></td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-500">
-                  Total
-                </td>
-                <td className="px-6 py-4 text-gray-900 text-14 font-800">
-                  $8,856.00
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="min-w-[500px] overflow-auto">
+            <table className="w-full text-sm text-left text-gray-500 rtl:text-right ">
+              <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
+                <tr className="bg-white border-b border-gray-300">
+                  <th scope="col" className="px-6 py-6">
+                    <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+                      <span>
+                        <IconItem />
+                      </span>
+                      ITEM
+                    </p>
+                  </th>
+                  <th scope="col" className="px-6 py-6">
+                    <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+                      QTY
+                    </p>
+                  </th>
+                  <th scope="col" className="px-6 py-6">
+                    <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+                      HOURS
+                    </p>
+                  </th>
+                  <th scope="col" className="px-6 py-6">
+                    <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+                      RATE
+                    </p>
+                  </th>
+                  <th scope="col" className="px-6 py-6">
+                    <p className="flex items-center gap-3 leading-6 text-gray-600 text-16 font-800">
+                      TOTAL
+                    </p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white">
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  >
+                    Bitcoin transactions
+                  </td>
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  >
+                    1
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    40
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    $10.00
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    $400.00
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  >
+                    Bitcoin transactions
+                  </td>
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  >
+                    1
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    40
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    $10.00
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    $400.00
+                  </td>
+                </tr>
+                <tr className="bg-white border-b border-gray-300">
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  >
+                    <Input placeholder="Description" />
+                  </td>
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  >
+                    <Input placeholder="0" />
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    <Input placeholder="0" />
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    <Input placeholder="0" />
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    $0.00
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="px-6 py-4 text-primary-1 text-14 font-800">
+                    Add Item
+                  </td>
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  ></td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-500 ">
+                    Subtotal
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800 ">
+                    $8,856.00
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  ></td>
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  ></td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-500">
+                    Discount
+                  </td>
+                  <td className="px-6 py-4 text-primary-1 text-14 font-800">
+                    Add
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  ></td>
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  ></td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
+                  <td className="px-6 py-4 text-gray-900 bg-white border-b border-gray-300 text-14 font-500">
+                    Tax
+                  </td>
+                  <td className="px-6 py-4 bg-white border-b border-gray-300 text-primary-1 text-14 font-800">
+                    Add
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  ></td>
+                  <td
+                    scope="row"
+                    className="px-6 py-4 text-gray-900 text-14 font-800 whitespace-nowrap"
+                  ></td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800"></td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-500">
+                    Total
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 text-14 font-800">
+                    $8,856.00
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="basis-[350px]">
           <form action="">

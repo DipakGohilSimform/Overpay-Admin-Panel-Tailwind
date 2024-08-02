@@ -1,229 +1,262 @@
 import Button from "@/components/Button/Button";
 import Header from "@/components/Header/Header";
-import IconAuto from "@/components/Icons/IconAuto";
+import IconArrow from "@/components/Icons/IconArrow";
 import IconBag from "@/components/Icons/IconBag";
-import IconBell from "@/components/Icons/IconBell";
 import IconDoller from "@/components/Icons/IconDoller";
-import IconReport from "@/components/Icons/IconReport";
-import IconTerminal from "@/components/Icons/IconTerminal";
+import { IconLike } from "@/components/Icons/IconLike";
+import IconSearch from "@/components/Icons/IconSearch";
+import IconSend from "@/components/Icons/IconSend";
+import { IconTag } from "@/components/Icons/IconTag";
 import IconUser from "@/components/Icons/IconUser";
 import Input from "@/components/Input/Input";
-import Select from "@/components/Select/Select";
+import Images from "@/config/images";
+import { Link } from "react-router-dom";
 
 function GetHelp() {
-  const options = [
-    { value: "option1", label: "Option 1" },
-    { value: "option2", label: "Option 2" },
-    { value: "option3", label: "Option 3" },
-  ];
   return (
     <div>
       <Header title="Get Help" />
-      <div className="flex border-t border-gray-300">
-        <div className="basis-[370px] p-10 border-r border-gray-300">
-          <h4 className="mb-4 leading-6 text-gray-600 text-14 font-800">
-            BUSINESS PROFILE
-          </h4>
-          <div className="mb-10">
-            <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full">
-                <IconBag />
-              </div>
-              <div>
-                <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
-                  Business Information
-                </h4>
-                <p className="leading-5 text-gray-600 text-12 font-400">
-                  Set up and manage your business
-                </p>
-              </div>
+      <div className="flex border-gray-300">
+        <div className="basis-[500px] shrink-0 p-10 border-r border-gray-300">
+          <div className="px-8 py-10 mb-10 bg-secondary-5 rounded-2xl">
+            <h2 className="mb-2 leading-6 text-gray-900 text-24 font-800">
+              Hi, how can we help?
+            </h2>
+            <p className="mb-8 leading-5 text-gray-600 text-14 font-500">
+              Type your question or search keyword
+            </p>
+            <div className="relative mb-6">
+              <span className="absolute text-gray-500 left-4 top-5">
+                <IconSearch />
+              </span>
+              <Input placeholder="Search" className="w-full pl-12" />
             </div>
-
-            <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full">
-                <IconDoller />
-              </div>
-              <div>
-                <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
-                  Money, Banks, and Card
-                </h4>
-                <p className="leading-5 text-gray-600 text-12 font-400">
-                  Gravida gravida nisi, magna blandit
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full">
-                <IconBell />
-              </div>
-              <div>
-                <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
-                  Notifications
-                </h4>
-                <p className="leading-5 text-gray-600 text-12 font-400">
-                  Manage notifications
-                </p>
-              </div>
+            <h5 className="mb-3 leading-4 text-gray-600 text-12 font-500">
+              Popular search:
+            </h5>
+            <div className="flex gap-3">
+              <Button
+                text="Send Money"
+                className="!leading-4 !text-12 !font-600"
+              />
+              <Button
+                text="Transfer"
+                className="!leading-4 !text-12 !font-600"
+              />
+              <Button
+                text="Change Card"
+                className="!leading-4 !text-12 !font-600"
+              />
             </div>
           </div>
-          <h4 className="mb-4 leading-6 text-gray-600 text-14 font-800">
-            ACCOUNT AND SERVICES
-          </h4>
           <div>
-            <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
-                <IconUser />
+            <Link
+              to="#"
+              className="flex items-center justify-between gap-4 px-4 py-6 mb-6 transition-all border border-gray-200 group rounded-2xl hover:border-primary-1"
+            >
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20 group-hover:text-white group-hover:bg-primary-1">
+                  <IconSend />
+                </div>
+                <div>
+                  <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
+                    Sending Money
+                  </h4>
+                  <p className="leading-5 text-gray-600 text-12 font-400 max-w-[240px]">
+                    Setting up, paying for, editing, and canceling transfers
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
-                  Account Access
-                </h4>
-                <p className="leading-5 text-gray-600 text-12 font-400">
-                  Set up and manage your business
-                </p>
+              <div className="text-gray-500 scale-125 -rotate-90">
+                <IconArrow />
               </div>
-            </div>
-            <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
-                <IconTerminal />
+            </Link>
+            <Link
+              to="#"
+              className="flex items-center justify-between gap-4 px-4 py-6 mb-6 transition-all border border-gray-200 group rounded-2xl hover:border-primary-1"
+            >
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20 group-hover:text-white group-hover:bg-primary-1">
+                  <IconUser />
+                </div>
+                <div>
+                  <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
+                    Managing Your Account
+                  </h4>
+                  <p className="leading-5 text-gray-600 text-12 font-400 max-w-[240px]">
+                    Setting up your account and getting verified
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
-                  Payment Preference
-                </h4>
-                <p className="leading-5 text-gray-600 text-12 font-400">
-                  Gravida gravida nisi, magna blandit
-                </p>
+              <div className="text-gray-500 scale-125 -rotate-90">
+                <IconArrow />
               </div>
-            </div>
-            <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
-                <IconAuto />
+            </Link>
+            <Link
+              to="#"
+              className="flex items-center justify-between gap-4 px-4 py-6 mb-6 transition-all border border-gray-200 group rounded-2xl hover:border-primary-1"
+            >
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20 group-hover:text-white group-hover:bg-primary-1">
+                  <IconDoller />
+                </div>
+                <div>
+                  <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
+                    Holding Money
+                  </h4>
+                  <p className="leading-5 text-gray-600 text-12 font-400 max-w-[240px]">
+                    Holding balances, setting up cards debits, and using assets
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
-                  Auto Conversions
-                </h4>
-                <p className="leading-5 text-gray-600 text-12 font-400">
-                  Gravida gravida nisi, magna blandit
-                </p>
+              <div className="text-gray-500 scale-125 -rotate-90">
+                <IconArrow />
               </div>
-            </div>
-            <div className="flex items-center gap-4 py-6">
-              <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20">
-                <IconReport />
+            </Link>
+            <Link
+              to="#"
+              className="flex items-center justify-between gap-4 px-4 py-6 mb-6 transition-all border border-gray-200 group rounded-2xl hover:border-primary-1"
+            >
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center w-12 h-12 text-gray-900 bg-gray-200 rounded-full text-20 group-hover:text-white group-hover:bg-primary-1">
+                  <IconBag />
+                </div>
+                <div>
+                  <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
+                    Overpay Business
+                  </h4>
+                  <p className="leading-5 text-gray-600 text-12 font-400 max-w-[240px]">
+                    Multi-users access, accounting, and using our API
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="mb-1 leading-6 text-gray-900 text-14 font-800">
-                  Statement and Reports
-                </h4>
-                <p className="leading-5 text-gray-600 text-12 font-400">
-                  Gravida gravida nisi, magna blandit
-                </p>
+              <div className="text-gray-500 scale-125 -rotate-90">
+                <IconArrow />
               </div>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="p-10 basis-auto grow">
-          <form action="">
-            <h2 className="mb-12 leading-6 text-gray-900 text-24 font-800">
-              Business Information
+          <div className="mb-12">
+            <h2 className="mb-2 leading-6 text-gray-900 text-24 font-800">
+              Holding Money
             </h2>
-            <h3 className="mb-6 leading-6 text-gray-900 text-20 font-800">
-              Business Details
+            <p className="leading-5 text-gray-600 text-14 font-500">
+              Holding balances, setting up cards debits, and using assets
+            </p>
+          </div>
+          <div className="p-6 mb-6 border border-gray-200 rounded-2xl">
+            <h3 className="mb-3 leading-6 text-gray-900 text-18 font-800">
+              Why can't I open balance?
             </h3>
-            <div className="grid grid-cols-2 gap-6 mb-10">
-              <div>
-                <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Business Name
-                </p>
-                <Input
-                  value="Iconic Agency"
-                  placeholder="Enter buisness name"
-                />
-              </div>
-              <div>
-                <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Industry
-                </p>
-                <Select
-                  options={options}
-                  placeholder="Select an option"
-                  className="!p-4 !h-[58px]"
-                />
-              </div>
-              <div>
-                <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Timezone
-                </p>
-                <Select
-                  options={options}
-                  placeholder="Select an option"
-                  className="!p-4 !h-[58px]"
-                />
-              </div>
-              <div>
-                <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Default Currency
-                </p>
-                <Select
-                  options={options}
-                  placeholder="Select an option"
-                  className="!p-4 !h-[58px]"
-                />
-              </div>
-            </div>
-
-            <div>
-              <h3 className="mb-6 leading-6 text-gray-900 text-20 font-800">
-                Business Address
-              </h3>
-              <div className="mb-8">
-                <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                  Legal name of company
-                </p>
-                <Input
-                  placeholder="Enter company name"
-                  value="Iconic Nice Agency LTD"
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-6 mb-10">
-                <div>
-                  <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                    Apartment, suite, or etc.
-                  </p>
-                  <Input placeholder="First name" value="United States" />
+            <p className="mb-8 leading-5 text-gray-600 text-14 font-500">
+              We'd like to offer balances to everyone. But there are a few
+              countries and US states where you can't open any balances just
+              yet.
+            </p>
+            <div className="flex items-center justify-between">
+              <img src={Images.Logo} alt="..." className="h-5" />
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconTag />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    Money basic, Balance
+                  </span>
                 </div>
-                <div>
-                  <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                    City
-                  </p>
-                  <Input placeholder="First name" value="California" />
-                </div>
-                <div>
-                  <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                    Date of birth
-                  </p>
-                  <Input placeholder="First name" value="29th March 1996" />
-                </div>
-                <div>
-                  <p className="mb-2 leading-5 text-gray-600 text-12 font-800">
-                    Phone number
-                  </p>
-                  <Input placeholder="First name" value="+1 2345 2980 777" />
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconLike />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    20
+                  </span>
                 </div>
               </div>
             </div>
-
-            <div className="flex justify-end">
-              <Button
-                text="Edit Details"
-                variant="primary"
-                className="w-[145px]"
-              />
+          </div>
+          <div className="p-6 mb-6 border border-gray-200 rounded-2xl">
+            <h3 className="mb-3 leading-6 text-gray-900 text-18 font-800">
+              How do I set up Direct Debits?
+            </h3>
+            <p className="mb-8 leading-5 text-gray-600 text-14 font-500">
+              When you set up a Direct Debit, you give a company permission to
+              take regular payments from your account. You might use Direct
+              Debits to pay for a monthly subscription like the gym, or to pay
+              your phone or energy bill.
+            </p>
+            <div className="flex items-center justify-between">
+              <img src={Images.Logo} alt="..." className="h-5" />
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconTag />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    Debit, Managing
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconLike />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    10
+                  </span>
+                </div>
+              </div>
             </div>
-          </form>
+          </div>
+          <div className="p-6 mb-6 border border-gray-200 rounded-2xl">
+            <h3 className="mb-3 leading-6 text-gray-900 text-18 font-800">
+              How do I open a balance?
+            </h3>
+            <p className="mb-8 leading-5 text-gray-600 text-14 font-500">
+              Add money to your balances whenever you like. Just choose which
+              currency you'd like to add to, then click Add money. When you add
+              money to your balances, make sure it comes from your own bank
+              account. If you want to add money to your business account, make
+              sure the money comes from your company's bank account.
+            </p>
+            <div className="flex items-center justify-between">
+              <img src={Images.Logo} alt="..." className="h-5" />
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconTag />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    Money basic, Balance
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconLike />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    25
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 mb-6 border border-gray-200 rounded-2xl">
+            <h3 className="mb-3 leading-6 text-gray-900 text-18 font-800">
+              How do I cancel a Direct Debit?
+            </h3>
+            <p className="mb-8 leading-5 text-gray-600 text-14 font-500">
+              Cancelling a Direct Debit won't cancel the contract or
+              subscription you have with the company you were paying. So don't
+              forget to cancel with them, or give them different account
+              details.
+            </p>
+            <div className="flex items-center justify-between">
+              <img src={Images.Logo} alt="..." className="h-5" />
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconTag />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    Money basic, Balance
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <IconLike />
+                  <span className="leading-5 text-gray-600 text-14 font-500">
+                    20
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -8,16 +8,10 @@ import IconInvoicesm from "@/components/Icons/IconInvoicesm";
 import IconMore from "@/components/Icons/IconMore";
 import IconRecieve from "@/components/Icons/IconReceive";
 import IconSend from "@/components/Icons/IconSend";
-import Select from "@/components/Select/Select";
 import Images from "@/config/images";
 import { Link } from "react-router-dom";
 
 export default function Dashboard() {
-  const options = [
-    { value: "option1", label: "Option 1" },
-    { value: "option2", label: "Option 2" },
-    { value: "option3", label: "Option 3" },
-  ];
   return (
     <div>
       <Header title="Dashboard" />
